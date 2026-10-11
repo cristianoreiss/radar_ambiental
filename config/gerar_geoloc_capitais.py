@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import json
 
 dados_capitais = []
 
@@ -30,4 +31,5 @@ for cidade in dict_capitais:
         print("Mais de uma cidade disponível")
     
 
-
+with open ("config/locations.json","w",encoding="utf-8",) as arquivo:
+    json.dump(dados_capitais,arquivo,indent=4, ensure_ascii=False)

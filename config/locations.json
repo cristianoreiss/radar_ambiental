@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Rio Branco",
+        "uf": "AC",
+        "latitude": -9.97472,
+        "longitude": -67.81,
+        "timezone": "America/Rio_Branco"
+    },
+    {
+        "name": "Maceió",
+        "uf": "AL",
+        "latitude": -9.66583,
+        "longitude": -35.73528,
+        "timezone": "America/Maceio"
+    },
+    {
+        "name": "Macapá",
+        "uf": "AP",
+        "latitude": 0.03889,
+        "longitude": -51.06639,
+        "timezone": "America/Belem"
+    },
+    {
+        "name": "Manaus",
+        "uf": "AM",
+        "latitude": -3.10194,
+        "longitude": -60.025,
+        "timezone": "America/Manaus"
+    },
+    {
+        "name": "Salvador",
+        "uf": "BA",
+        "latitude": -12.97563,
+        "longitude": -38.49096,
+        "timezone": "America/Bahia"
+    },
+    {
+        "name": "Fortaleza",
+        "uf": "CE",
+        "latitude": -3.71722,
+        "longitude": -38.54306,
+        "timezone": "America/Fortaleza"
+    },
+    {
+        "name": "Brasília",
+        "uf": "DF",
+        "latitude": -15.77972,
+        "longitude": -47.92972,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Vitória",
+        "uf": "ES",
+        "latitude": -20.31944,
+        "longitude": -40.33778,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Goiânia",
+        "uf": "GO",
+        "latitude": -16.67861,
+        "longitude": -49.25389,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "São Luís",
+        "uf": "MA",
+        "latitude": -2.52972,
+        "longitude": -44.30278,
+        "timezone": "America/Fortaleza"
+    },
+    {
+        "name": "Cuiabá",
+        "uf": "MT",
+        "latitude": -15.59611,
+        "longitude": -56.09667,
+        "timezone": "America/Cuiaba"
+    },
+    {
+        "name": "Campo Grande",
+        "uf": "MS",
+        "latitude": -20.44278,
+        "longitude": -54.64639,
+        "timezone": "America/Campo_Grande"
+    },
+    {
+        "name": "Belo Horizonte",
+        "uf": "MG",
+        "latitude": -19.92083,
+        "longitude": -43.93778,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Belém",
+        "uf": "PA",
+        "latitude": -1.45583,
+        "longitude": -48.50444,
+        "timezone": "America/Belem"
+    },
+    {
+        "name": "João Pessoa",
+        "uf": "PB",
+        "latitude": -7.115,
+        "longitude": -34.86306,
+        "timezone": "America/Fortaleza"
+    },
+    {
+        "name": "Curitiba",
+        "uf": "PR",
+        "latitude": -25.42778,
+        "longitude": -49.27306,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Recife",
+        "uf": "PE",
+        "latitude": -8.05389,
+        "longitude": -34.88111,
+        "timezone": "America/Recife"
+    },
+    {
+        "name": "Teresina",
+        "uf": "PI",
+        "latitude": -5.08917,
+        "longitude": -42.80194,
+        "timezone": "America/Fortaleza"
+    },
+    {
+        "name": "Rio de Janeiro",
+        "uf": "RJ",
+        "latitude": -22.90642,
+        "longitude": -43.18223,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Natal",
+        "uf": "RN",
+        "latitude": -5.795,
+        "longitude": -35.20944,
+        "timezone": "America/Fortaleza"
+    },
+    {
+        "name": "Porto Alegre",
+        "uf": "RS",
+        "latitude": -30.03283,
+        "longitude": -51.23019,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Porto Velho",
+        "uf": "RO",
+        "latitude": -8.76194,
+        "longitude": -63.90389,
+        "timezone": "America/Porto_Velho"
+    },
+    {
+        "name": "Boa Vista",
+        "uf": "RR",
+        "latitude": 2.81972,
+        "longitude": -60.67333,
+        "timezone": "America/Boa_Vista"
+    },
+    {
+        "name": "Florianópolis",
+        "uf": "SC",
+        "latitude": -27.59667,
+        "longitude": -48.54917,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "São Paulo",
+        "uf": "SP",
+        "latitude": -23.5475,
+        "longitude": -46.63611,
+        "timezone": "America/Sao_Paulo"
+    },
+    {
+        "name": "Aracaju",
+        "uf": "SE",
+        "latitude": -10.91111,
+        "longitude": -37.07167,
+        "timezone": "America/Maceio"
+    },
+    {
+        "name": "Palmas",
+        "uf": "TO",
+        "latitude": -10.16745,
+        "longitude": -48.32766,
+        "timezone": "America/Araguaina"
+    }
+]
