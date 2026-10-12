@@ -1,4 +1,7 @@
 .env
-data/*
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
 logs/*
 .venv/
