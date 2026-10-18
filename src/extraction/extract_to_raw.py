@@ -5,6 +5,8 @@ import os
 CAMINHO_ARQUIVO_CAPITAIS = "config/locations.json"
 CAMINHO_PASTA_RAW = "data/raw"
 
+os.makedirs(CAMINHO_PASTA_RAW, exist_ok=True)
+
 session = requests.Session()
 
 with open(CAMINHO_ARQUIVO_CAPITAIS,"r",encoding="utf-8") as arquivo:
@@ -25,6 +27,7 @@ for capital in geo_capitais:
 
     try:
         resposta_previsao = session.get(url=ENDPOINT_PREVISAO,params=parametros_previsao)
+        resposta_previsao.raise_for_status()
         dados = resposta_previsao.json()
         """
         dados_capital = {
@@ -55,6 +58,7 @@ for capital in geo_capitais:
 
     try:
         resposta_qualidade = session.get(url=ENDPOINT_QUALIDADE,params=parametros_qualidade)
+        resposta_qualidade.raise_for_status()
         dados = resposta_qualidade.json()
     except Exception as e:
         print(f"Erro encontrado: {e}")
