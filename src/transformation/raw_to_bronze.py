@@ -1,19 +1,27 @@
 import os
-import requests
-import json
+import polars as pl
+from pathlib import Path
 
-CAMINHO_PASTA_RAW = "data/raw"
-CAMINHO_PASTA_BRONZE = "data/bronze"
-CAMINHO_DADOS_QUALITY = CAMINHO_PASTA_RAW.join("/air-quality_raw.json")
-CAMINHO_DADOS_FORECAST = CAMINHO_PASTA_RAW.join("/forecast_raw.json")
+CAMINHO_PASTA_RAW = Path("data/raw")
+CAMINHO_PASTA_BRONZE = Path("data/bronze")
+CAMINHO_DADOS_QUALITY = CAMINHO_PASTA_RAW / "air-quality_raw.json"
+CAMINHO_DADOS_FORECAST = CAMINHO_PASTA_RAW / "forecast_raw.json"
 os.makedirs(CAMINHO_PASTA_BRONZE, exist_ok=True)
 
-json_forecast = []
-json_quality = []
+dataframe_forecast = pl.read_json(CAMINHO_DADOS_FORECAST)
+dataframe_quality = pl.read_json(CAMINHO_DADOS_QUALITY)
 
-with open(CAMINHO_DADOS_FORECAST,"r",encoding="utf-8") as arquivo_forecast:
-    json_forecast = json.load(arquivo_forecast)
+campos_units_forecast = dataframe_forecast["hourly_units"].struct.fields
+campo_valores_forecast = dataframe_forecast["hourly"].struct.fields
+dataframe_forecast = dataframe_forecast.with_columns(
+    pl.col("hourly_units").struct.rename_fields([f"{c}_unit" for c in campos_units_forecast])
+)
+dataframe_forecast = dataframe_forecast.unnest().explode(columns=campo_valores_forecast)
 
-with open(CAMINHO_DADOS_QUALITY,"r",encoding="utf-8") as arquivo_quality:
-    json_quality = json.load(arquivo_quality)
+campo_units_quality = dataframe_quality["hourly_units"].struct.fields
+campo_valores_quality = dataframe_quality["hourly"].struct.fields
+dataframe_quality = dataframe_quality.with_columns(
+    pl.col("hourly_units").struct.rename_fields([f"{c}_unit" for c in campo_units_quality])
+)
+dataframe_quality = dataframe_quality.unnest().explode(columns=campo_valores_quality)
 
