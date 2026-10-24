@@ -5,6 +5,7 @@ import os
 CAMINHO_ARQUIVO_CAPITAIS = "config/locations.json"
 CAMINHO_PASTA_RAW = "data/raw"
 
+
 os.makedirs(CAMINHO_PASTA_RAW, exist_ok=True)
 
 session = requests.Session()

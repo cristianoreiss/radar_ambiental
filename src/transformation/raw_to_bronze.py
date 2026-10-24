@@ -25,3 +25,5 @@ dataframe_quality = dataframe_quality.with_columns(
 )
 dataframe_quality = dataframe_quality.unnest().explode(columns=campo_valores_quality)
 
+dataframe_forecast.write_parquet(CAMINHO_PASTA_BRONZE / "forecast_bronze.parquet")
+dataframe_quality.write_parquet(CAMINHO_PASTA_BRONZE / "air-quality_bronze.parquet")
