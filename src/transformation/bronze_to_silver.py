@@ -2,8 +2,9 @@ import polars as pl
 from pathlib import Path
 import os
 
-CAMINHO_PASTA_BRONZE = Path("data/bronze")
-CAMINHO_PASTA_SILVER = Path("data/silver")
+PASTA_PROJETO = Path(__file__).resolve().parents[2]
+CAMINHO_PASTA_BRONZE = PASTA_PROJETO / "data/bronze"
+CAMINHO_PASTA_SILVER = PASTA_PROJETO / "data/silver"
 CAMINHO_DADOS_QUALITY = CAMINHO_PASTA_BRONZE / "air-quality_bronze.parquet"
 CAMINHO_DADOS_FORECAST = CAMINHO_PASTA_BRONZE / "forecast_bronze.parquet"
 os.makedirs(CAMINHO_PASTA_SILVER, exist_ok=True)
