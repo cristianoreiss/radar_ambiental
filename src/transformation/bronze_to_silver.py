@@ -17,8 +17,11 @@ colunas_remover_quality = [coluna for coluna in dataset_quality.columns if colun
 dataset_forecast = dataset_forecast.drop(colunas_remover_forecast)
 dataset_quality = dataset_quality.drop(colunas_remover_quality)
 dataset_forecast = dataset_forecast.with_columns([
-    pl.col("time").cast(pl.datetime)
+    pl.col("time").str.to_datetime("%Y-%m-%dT%H:%M").dt.replace_time_zone("UTC")
 ])
 dataset_quality = dataset_quality.with_columns([
-    pl.col("time").cast(pl.datetime)
+    pl.col("time").str.to_datetime("%Y-%m-%dT%H:%M").dt.replace_time_zone("UTC")
 ])
+
+dataset_forecast.write_parquet(CAMINHO_PASTA_SILVER / "forecast_silver.parquet")
+dataset_quality.write_parquet(CAMINHO_PASTA_SILVER / "air-quality_silver.parquet")
