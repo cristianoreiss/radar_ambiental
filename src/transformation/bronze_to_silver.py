@@ -15,7 +15,7 @@ dataset_quality = pl.read_parquet(CAMINHO_DADOS_QUALITY)
 
 dataset_forecast = dataset_forecast.drop(
     cs.ends_with("_unit"),
-    EXCLUIR_COLUNAS
+    EXCLUIR_COLUNAS,
     strict=False
 )
 dataset_quality = dataset_quality.drop(
