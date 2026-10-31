@@ -34,8 +34,6 @@ radar_horario = dataset_forecast.join(
     coalesce=True
 )
 
-## radar_resumo_diario = rad
-
 radar_horario = radar_horario.join(
     other=dataset_capitais,
     on=["uf"],
@@ -57,7 +55,34 @@ for chave, pedaco in df_particionado.items():
 
 radar_horario = pl.concat(tabelas_convertidas)
 radar_horario = radar_horario.sort(["uf","time"])
+radar_horario = radar_horario.with_columns(
+    pl.col("time_local")
+    .dt.date()
+    .alias("date")
+)
 
-print(radar_horario.tail())
+radar_resumo_diario = radar_horario.group_by(["uf","date"]).agg(
+    pl.col("temperature_2m").min().alias("min_temperatura"),
+    pl.col("temperature_2m").max().alias("max_temperatura"),
+    pl.col("temperature_2m").mean().alias("media_temperatura"),
+    pl.col("precipitation").sum().alias("soma_precipitacao"),
+    pl.col("precipitation").max().alias("max_precipitacao"),
+    (pl.col("precipitation") > 0).sum().alias("horas_com_chuva"),
+    pl.col("precipitation_probability").max().alias("max_prob_chuva"),
+    pl.col("relative_humidity_2m").mean().alias("media_umidade"),
+    pl.col("relative_humidity_2m").min().alias("min_umidade"),
+    pl.col("relative_humidity_2m").max().alias("max_umidade"),
+    pl.col("pm2_5").max().alias("max_pm2_5"),
+    pl.col("pm2_5").mean().alias("media_pm2_5"),
+    pl.col("pm2_5").count().alias("horas_com_pm2_5"),
+    pl.col("pm10").max().alias("max_pm10"),
+    pl.col("pm10").mean().alias("media_pm10"),
+    pl.col("pm10").count().alias("horas_com_pm10"),
+    pl.col("ozone").max().alias("max_ozonio"),
+    pl.col("ozone").mean().alias("media_ozonio"),
+    pl.col("ozone").count().alias("horas_com_ozonio"),
+    pl.len().alias("horas_observadas")
+).sort(["uf","date"])
+print(radar_resumo_diario.head())
 
 
