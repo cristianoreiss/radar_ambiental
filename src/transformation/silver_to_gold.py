@@ -24,11 +24,40 @@ dataset_capitais = dataset_capitais.with_columns(
     .otherwise(None)
     .alias("regiao")
 )
+
 dataset_quality = dataset_quality.drop("name")
+dataset_forecast = dataset_forecast.drop("name")
 radar_horario = dataset_forecast.join(
-    dataset_quality,
+    other=dataset_quality,
     on=["uf","time"],
     how="full",
     coalesce=True
 )
+
+## radar_resumo_diario = rad
+
+radar_horario = radar_horario.join(
+    other=dataset_capitais,
+    on=["uf"],
+    how="left"
+)
+
+df_particionado = radar_horario.partition_by("timezone",as_dict=True)
+
+tabelas_convertidas = []
+for chave, pedaco in df_particionado.items():
+    fuso = chave[0]
+    tabela = pedaco.with_columns(
+        pl.col("time")
+        .dt.convert_time_zone(fuso)
+        .dt.replace_time_zone(None)
+        .alias("time_local")
+    )
+    tabelas_convertidas.append(tabela)
+
+radar_horario = pl.concat(tabelas_convertidas)
+radar_horario = radar_horario.sort(["uf","time"])
+
+print(radar_horario.tail())
+
 
