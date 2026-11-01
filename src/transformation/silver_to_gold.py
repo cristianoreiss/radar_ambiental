@@ -83,6 +83,11 @@ radar_resumo_diario = radar_horario.group_by(["uf","date"]).agg(
     pl.col("ozone").count().alias("horas_com_ozonio"),
     pl.len().alias("horas_observadas")
 ).sort(["uf","date"])
-print(radar_resumo_diario.head())
+
+
+dataset_capitais.write_parquet(CAMINHO_PASTA_GOLD / "gold_dim_capitais.parquet")
+radar_horario.write_parquet(CAMINHO_PASTA_GOLD / "gold_radar_horario.parquet")
+radar_resumo_diario.write_parquet(CAMINHO_PASTA_GOLD / "gold_radar_resumo_diario.parquet")
+
 
 
