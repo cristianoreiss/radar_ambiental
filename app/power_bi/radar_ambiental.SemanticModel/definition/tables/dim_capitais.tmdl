@@ -1,0 +1,67 @@
+table dim_capitais
+	lineageTag: 9a4ee524-0995-4b0e-b74a-fb7abae80052
+
+	column name
+		dataType: string
+		lineageTag: 414bff9d-0ada-4540-b36f-63cadddc0af2
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf
+		dataType: string
+		lineageTag: bb80216c-5cdc-4c56-ac0c-f5e8f0510036
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: fb5d0b84-8e80-436d-b9c8-2bbb17fdeca3
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: 1bb4f271-0cb7-4cb9-978d-ee95e7c2edca
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column timezone
+		dataType: string
+		lineageTag: a49a83d9-5352-4679-b9af-3a4a8d4feada
+		summarizeBy: none
+		sourceColumn: timezone
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao
+		dataType: string
+		lineageTag: 8b20ca7d-60ea-4ed7-9fe2-6221ddb04d4a
+		summarizeBy: none
+		sourceColumn: regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_capitais = m
+		mode: import
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_dim_capitais.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Fonte
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

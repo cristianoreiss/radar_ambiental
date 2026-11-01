@@ -1,4 +1,4 @@
-# radar_ambiental
+# Radar Ambiental
 
 Pipeline de engenharia de dados que coleta, de hora em hora, a **previsão do tempo** e a **qualidade do ar** das 27 capitais brasileiras, organiza os dados em camadas (raw, bronze, silver e gold) e os entrega prontos para um painel de acompanhamento.
 

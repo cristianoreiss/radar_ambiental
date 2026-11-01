@@ -1,0 +1,179 @@
+table radar_horario
+	lineageTag: 5a61cdbb-c239-443d-b370-a495e30ffaee
+
+	column time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 29d22d74-9da3-418b-961c-ce31172edbf2
+		summarizeBy: none
+		sourceColumn: time
+
+		variation Variation
+			isDefault
+			relationship: 5e48a2f9-0f45-4b1c-b289-9b800529b0d7
+			defaultHierarchy: LocalDateTable_7d96413f-1e5a-4967-a025-9d38357735df.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column precipitation_probability
+		dataType: int64
+		formatString: 0
+		lineageTag: ba54aaf8-5dc3-4b64-a35b-5376515873e5
+		summarizeBy: sum
+		sourceColumn: precipitation_probability
+
+		annotation SummarizationSetBy = Automatic
+
+	column temperature_2m
+		dataType: double
+		lineageTag: 0ab29e39-f37a-4a37-961f-6258a378c620
+		summarizeBy: sum
+		sourceColumn: temperature_2m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column precipitation
+		dataType: double
+		lineageTag: c1273590-44a1-41a6-ba23-1cf320d366c8
+		summarizeBy: sum
+		sourceColumn: precipitation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column relative_humidity_2m
+		dataType: int64
+		formatString: 0
+		lineageTag: d0d49439-4a98-4ef7-8efc-1034c6f4d82b
+		summarizeBy: sum
+		sourceColumn: relative_humidity_2m
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf
+		dataType: string
+		lineageTag: c685320f-f583-41ff-931a-846da32fa5ce
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column pm10
+		dataType: double
+		lineageTag: 573a92f0-d41c-4013-ac5b-fdbc90df0288
+		summarizeBy: sum
+		sourceColumn: pm10
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pm2_5
+		dataType: double
+		lineageTag: a6d387c1-ff6c-472f-948b-e046ca5e61aa
+		summarizeBy: sum
+		sourceColumn: pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ozone
+		dataType: double
+		lineageTag: b4156d70-625f-476f-9426-ab8e7aa7ffb8
+		summarizeBy: sum
+		sourceColumn: ozone
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name
+		dataType: string
+		lineageTag: 45b6ed47-4b01-4f88-bdad-c1d0ffa08bdc
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		lineageTag: 3e839bf1-9f62-4df0-88a4-89b7c8bf84fe
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		lineageTag: ed5b436b-55a4-404a-8f05-621eefc32adb
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column timezone
+		dataType: string
+		lineageTag: a82d22b2-0edd-4408-956c-849abc6850a7
+		summarizeBy: none
+		sourceColumn: timezone
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao
+		dataType: string
+		lineageTag: 7ef5d106-c03d-49e8-895b-f354a62dc6fd
+		summarizeBy: none
+		sourceColumn: regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_local
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: acd7d2d9-e0f8-47ff-a89c-cc9609b0e6de
+		summarizeBy: none
+		sourceColumn: time_local
+
+		variation Variation
+			isDefault
+			relationship: 7d7703a8-1d90-472e-add6-a932e2de02ac
+			defaultHierarchy: LocalDateTable_d5bed029-2b17-4643-a9b6-1f7c8803da3b.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 79d0fa59-b959-4de1-8f8a-a5396d8cf8e5
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 0dbceaf3-4881-4b34-86d4-f78a73c80bf6
+			defaultHierarchy: LocalDateTable_873fd9b7-abb3-4294-9b1d-797316ece5c9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition radar_horario = m
+		mode: import
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_horario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Fonte
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

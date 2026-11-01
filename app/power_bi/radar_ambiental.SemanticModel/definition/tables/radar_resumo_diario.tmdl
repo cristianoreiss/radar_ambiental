@@ -1,0 +1,231 @@
+table radar_resumo_diario
+	lineageTag: d121628c-41f1-42af-a4db-8beb94cbe409
+
+	column uf
+		dataType: string
+		lineageTag: d84957a6-e5b2-4422-ac59-28ff06452292
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9a5c78b4-0878-42f8-9323-a1fd3c4cdd8a
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 6eea925f-de69-4508-98f7-1942ca9ea83b
+			defaultHierarchy: LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column min_temperatura
+		dataType: double
+		lineageTag: 553042f0-b24e-4dcd-94d2-c6e648050eb0
+		summarizeBy: sum
+		sourceColumn: min_temperatura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column max_temperatura
+		dataType: double
+		lineageTag: 9b8ef8da-4825-4f4c-ad4a-f59b070ae4be
+		summarizeBy: sum
+		sourceColumn: max_temperatura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column media_temperatura
+		dataType: double
+		lineageTag: b975b36f-f541-414d-8e8e-d5edc5dcc2b4
+		summarizeBy: sum
+		sourceColumn: media_temperatura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column soma_precipitacao
+		dataType: double
+		lineageTag: d130a4e9-a614-469e-a0ab-5947e0c5d3ab
+		summarizeBy: sum
+		sourceColumn: soma_precipitacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column max_precipitacao
+		dataType: double
+		lineageTag: e5a9691b-1837-426f-a03c-0841ce8c3e12
+		summarizeBy: sum
+		sourceColumn: max_precipitacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_com_chuva
+		dataType: int64
+		formatString: 0
+		lineageTag: 10cc4878-3f54-4ca5-bcd9-326ed455fa15
+		summarizeBy: sum
+		sourceColumn: horas_com_chuva
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_prob_chuva
+		dataType: int64
+		formatString: 0
+		lineageTag: c2e8f69d-f049-40ad-8331-9ee49659ae47
+		summarizeBy: sum
+		sourceColumn: max_prob_chuva
+
+		annotation SummarizationSetBy = Automatic
+
+	column media_umidade
+		dataType: double
+		lineageTag: a06af16d-322f-4a6f-b1d8-a48e4faf53e8
+		summarizeBy: sum
+		sourceColumn: media_umidade
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column min_umidade
+		dataType: int64
+		formatString: 0
+		lineageTag: ab10147d-c90d-4bc6-a4ae-29271e7154ec
+		summarizeBy: sum
+		sourceColumn: min_umidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_umidade
+		dataType: int64
+		formatString: 0
+		lineageTag: c932d08d-969f-4eab-bc8c-6faba4b722f8
+		summarizeBy: sum
+		sourceColumn: max_umidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_pm2_5
+		dataType: double
+		lineageTag: ef76dd7e-54c9-4e2c-a110-b57379ce2272
+		summarizeBy: sum
+		sourceColumn: max_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column media_pm2_5
+		dataType: double
+		lineageTag: fe3f63e5-ec04-474e-bebf-eb464c04715c
+		summarizeBy: sum
+		sourceColumn: media_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_com_pm2_5
+		dataType: int64
+		formatString: 0
+		lineageTag: 61d67932-5263-479d-b50f-9d4926741e39
+		summarizeBy: sum
+		sourceColumn: horas_com_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_pm10
+		dataType: double
+		lineageTag: 28e44813-34a9-4f5a-aa8e-cedc49f2b67b
+		summarizeBy: sum
+		sourceColumn: max_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column media_pm10
+		dataType: double
+		lineageTag: 2f9197a3-ee5b-4590-88c1-d0d5bea36420
+		summarizeBy: sum
+		sourceColumn: media_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_com_pm10
+		dataType: int64
+		formatString: 0
+		lineageTag: 062dabed-160c-479e-84e6-a962b9fa0afb
+		summarizeBy: sum
+		sourceColumn: horas_com_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_ozonio
+		dataType: double
+		lineageTag: 2243c8f0-7bab-4191-9ada-140b69e1d865
+		summarizeBy: sum
+		sourceColumn: max_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column media_ozonio
+		dataType: double
+		lineageTag: 7673d14a-6bf5-4394-a0ca-b356ce84280b
+		summarizeBy: sum
+		sourceColumn: media_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_com_ozonio
+		dataType: int64
+		formatString: 0
+		lineageTag: 40e2a59b-ef6a-4fe3-a9ce-a5d70b592cee
+		summarizeBy: sum
+		sourceColumn: horas_com_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+	column horas_observadas
+		dataType: int64
+		formatString: 0
+		lineageTag: 77413e3a-d80a-4c48-b605-d84b22022460
+		summarizeBy: sum
+		sourceColumn: horas_observadas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition radar_resumo_diario = m
+		mode: import
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_resumo_diario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Fonte
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

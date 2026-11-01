@@ -11,5 +11,16 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["dim_capitais","radar_horario","radar_resumo_diario"]
+
+ref table dim_capitais
+ref table radar_horario
+ref table DateTableTemplate_4c42b2a6-35b1-4b01-9a92-6bf1e0f0854f
+ref table LocalDateTable_7d96413f-1e5a-4967-a025-9d38357735df
+ref table LocalDateTable_d5bed029-2b17-4643-a9b6-1f7c8803da3b
+ref table LocalDateTable_873fd9b7-abb3-4294-9b1d-797316ece5c9
+ref table radar_resumo_diario
+ref table LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908
+
 ref cultureInfo pt-BR
 

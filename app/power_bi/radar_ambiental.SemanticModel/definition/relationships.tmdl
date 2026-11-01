@@ -1,0 +1,28 @@
+relationship 5e48a2f9-0f45-4b1c-b289-9b800529b0d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: radar_horario.time
+	toColumn: LocalDateTable_7d96413f-1e5a-4967-a025-9d38357735df.Date
+
+relationship 7d7703a8-1d90-472e-add6-a932e2de02ac
+	joinOnDateBehavior: datePartOnly
+	fromColumn: radar_horario.time_local
+	toColumn: LocalDateTable_d5bed029-2b17-4643-a9b6-1f7c8803da3b.Date
+
+relationship 0dbceaf3-4881-4b34-86d4-f78a73c80bf6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: radar_horario.date
+	toColumn: LocalDateTable_873fd9b7-abb3-4294-9b1d-797316ece5c9.Date
+
+relationship 6eea925f-de69-4508-98f7-1942ca9ea83b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: radar_resumo_diario.date
+	toColumn: LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908.Date
+
+relationship AutoDetected_cc053d67-5024-48bb-bdb5-0fb7dc2b1562
+	fromColumn: radar_horario.uf
+	toColumn: dim_capitais.uf
+
+relationship AutoDetected_50fb4396-bba5-4bae-a94d-09b44737d38c
+	fromColumn: radar_resumo_diario.uf
+	toColumn: dim_capitais.uf
+
