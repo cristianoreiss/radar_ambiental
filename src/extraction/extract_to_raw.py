@@ -1,12 +1,10 @@
 import requests
 import json
-import os
 from pathlib import Path
 
 PASTA_PROJETO = Path(__file__).resolve().parents[2]
-CAMINHO_PASTA_RAW = "data/raw"
+CAMINHO_PASTA_RAW = PASTA_PROJETO / "data" / "raw"
 CAMINHO_ARQUIVO_CAPITAIS = PASTA_PROJETO / "config" / "locations.json"
-
 DADOS_API = [
     {
         "nome": "air-quality",
@@ -46,28 +44,45 @@ def gravar_na_raw(pasta: str | Path, nome_arquivo: str,lista_dados:list[dict]) -
     with open(caminho_arquivo,"w",encoding="utf-8") as arquivo:
         json.dump(lista_dados,arquivo,indent=4,ensure_ascii=False)
 
-def extract_to_raw() -> None:
+def extract_to_raw(
+        caminho_arquivo_capitais: Path,
+        caminho_raw: Path,
+        configuracoes_api: list[dict]
+) -> None:
     sessao = requests.Session()
-    lista_capitais = ler_dados_capitais(CAMINHO_ARQUIVO_CAPITAIS)
+    lista_capitais = ler_dados_capitais(caminho_arquivo_capitais)
 
-    for api in DADOS_API:
+    for api in configuracoes_api:
         nome = api["nome"]
         endpoint = api["endpoint"]
         campos = api["campos"]
-        api["dados_api"] = []
-        for capital in lista_capitais:
-            uf = capital["uf"]
-            nome_capital = capital["name"]
-            latitude = capital["latitude"]
-            longitude = capital["longitude"]
-            dados_api = consultar_api(url=endpoint,sessao=sessao,latitude=latitude,longitude=longitude,campos=campos)
-            dados_api["uf"] = uf
-            dados_api["name"] = nome_capital
-            api["dados_api"].append(dados_api)
 
-        gravar_na_raw(pasta=CAMINHO_PASTA_RAW,nome_arquivo=nome,lista_dados=api["dados_api"])
+        lista_dados = []
+
+        for capital in lista_capitais:
+            dados_resposta = consultar_api(
+                url=endpoint,
+                sessao=sessao,
+                latitude=capital["latitude"],
+                longitude=capital["longitude"],
+                campos=campos
+            )
+            dados_resposta["uf"] = capital["uf"]
+            dados_resposta["name"] = capital["name"]
+
+            lista_dados.append(dados_resposta)
+
+        gravar_na_raw(
+            pasta=caminho_raw,
+            nome_arquivo=nome,
+            lista_dados=lista_dados
+        )
 
 
 if __name__ == "__main__":
-    extract_to_raw() 
+    extract_to_raw(
+        caminho_arquivo_capitais = CAMINHO_ARQUIVO_CAPITAIS,
+        caminho_raw = CAMINHO_PASTA_RAW,
+        configuracoes_api=DADOS_API
+    ) 
 
