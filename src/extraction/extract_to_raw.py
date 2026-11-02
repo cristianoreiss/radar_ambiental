@@ -18,6 +18,19 @@ ENDPOINT_PREVISAO = "https://api.open-meteo.com/v1/forecast"
 dados_previsao = []
 dados_qualidade = []
 
+DADOS_API = [
+    {
+        "nome": "air_quality",
+        "endpoint": "https://air-quality-api.open-meteo.com/v1/air-quality",
+        "campos": "pm10,pm2_5,ozone"
+    },
+    {
+        "nome": "forecast",
+        "endpoint": "https://api.open-meteo.com/v1/forecast",
+        "campos": "precipitation_probability,temperature_2m,precipitation,relative_humidity_2m"
+    }
+]
+
 for capital in geo_capitais:
     parametros_previsao = {
         "latitude": capital.get("latitude"),
@@ -80,6 +93,7 @@ with open(caminho_air_quality,"w",encoding="utf-8") as arquivo:
 ######################################################
 
 ## def ler os dados da raw
+def dados
 ## def consultar apis
 ## def gravar dados parquet na pasta bronze
 ## def função geral 
