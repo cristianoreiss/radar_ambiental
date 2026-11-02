@@ -1,26 +1,15 @@
 import requests
 import json
 import os
+from pathlib import Path
 
-CAMINHO_ARQUIVO_CAPITAIS = "config/locations.json"
+PASTA_PROJETO = Path(__file__).resolve().parents[2]
 CAMINHO_PASTA_RAW = "data/raw"
-
-
-os.makedirs(CAMINHO_PASTA_RAW, exist_ok=True)
-
-session = requests.Session()
-
-with open(CAMINHO_ARQUIVO_CAPITAIS,"r",encoding="utf-8") as arquivo:
-    geo_capitais = json.load(arquivo)
-
-ENDPOINT_QUALIDADE = "https://air-quality-api.open-meteo.com/v1/air-quality"
-ENDPOINT_PREVISAO = "https://api.open-meteo.com/v1/forecast"
-dados_previsao = []
-dados_qualidade = []
+CAMINHO_ARQUIVO_CAPITAIS = PASTA_PROJETO / "config" / "locations.json"
 
 DADOS_API = [
     {
-        "nome": "air_quality",
+        "nome": "air-quality",
         "endpoint": "https://air-quality-api.open-meteo.com/v1/air-quality",
         "campos": "pm10,pm2_5,ozone"
     },
@@ -31,70 +20,54 @@ DADOS_API = [
     }
 ]
 
-for capital in geo_capitais:
-    parametros_previsao = {
-        "latitude": capital.get("latitude"),
-        "longitude": capital.get("longitude"),
-        "hourly": "precipitation_probability,temperature_2m,precipitation,relative_humidity_2m",
-        "timezone": "UTC"
-    }
-
-    try:
-        resposta_previsao = session.get(url=ENDPOINT_PREVISAO,params=parametros_previsao)
-        resposta_previsao.raise_for_status()
-        dados = resposta_previsao.json()
-        """
-        dados_capital = {
-            "name": capital.get("name"),
-            "uf": capital.get("uf")
-            "hourly": dados.get("hourly"),
-            "temperature_2m": dados.get("temperature_2m"),
-            "precipitation_probability": dados.get("precipitation_probability"),
-            "precipitation": dados.get("precipitation"),
-            "relative_humidity_2m": dados.get("relative_humidity_2m")
-            
-        }
-        """
-    except Exception as e:
-        print(f"Erro encontrado: {e}")  
-    else:
-        dados.update({"name":capital.get("name"),"uf":capital.get("uf")})
-        dados_previsao.append(dados)
-
-    ## ============================================================
-
-    parametros_qualidade = {
-        "latitude": capital.get("latitude"),
-        "longitude": capital.get("longitude"),
-        "hourly": "pm10,pm2_5,ozone",
-        "timezone": "UTC"
-    }  
-
-    try:
-        resposta_qualidade = session.get(url=ENDPOINT_QUALIDADE,params=parametros_qualidade)
-        resposta_qualidade.raise_for_status()
-        dados = resposta_qualidade.json()
-    except Exception as e:
-        print(f"Erro encontrado: {e}")
-    else:
-        dados.update({"name":capital.get("name"),"uf":capital.get("uf")})
-        dados_qualidade.append(dados)
-
-# === Criar arquivo raw
-
-caminho_forecast = os.path.join(CAMINHO_PASTA_RAW,"raw_forecast.json")
-with open(caminho_forecast,"w",encoding="utf-8") as arquivo:
-    json.dump(dados_previsao,arquivo,indent=4, ensure_ascii=False)
-
-caminho_air_quality = os.path.join(CAMINHO_PASTA_RAW,"raw_air-quality.json")
-with open(caminho_air_quality,"w",encoding="utf-8") as arquivo:
-    json.dump(dados_qualidade,arquivo,indent=4, ensure_ascii=False)
-
 ######################################################
 
-## def ler os dados da raw
-def dados
-## def consultar apis
-## def gravar dados parquet na pasta bronze
-## def função geral 
+def ler_dados_capitais(caminho_arquivo_capitais: str | Path) -> list[dict]:
+    with open(caminho_arquivo_capitais,"r",encoding="utf-8") as arquivo:
+        lista_capitais = json.load(arquivo)
+    return lista_capitais
+
+def consultar_api(url:str, sessao:requests.Session, latitude:float,longitude:float,campos:str) -> dict:
+    parametros = {
+        "latitude": latitude,
+        "longitude": longitude,
+        "hourly":campos,
+        "timezone": "UTC"
+    }
+    resposta = sessao.get(url=url,params=parametros)
+    dados = resposta.json()
+    return dados
+
+def gravar_na_raw(pasta: str | Path, nome_arquivo: str,lista_dados:list[dict]) -> None:
+    pasta = Path(pasta)
+    nome_arquivo_extensao = "raw_" + nome_arquivo + ".json"
+    pasta.mkdir(parents=True,exist_ok=True)
+    caminho_arquivo = pasta / nome_arquivo_extensao
+    with open(caminho_arquivo,"w",encoding="utf-8") as arquivo:
+        json.dump(lista_dados,arquivo,indent=4,ensure_ascii=False)
+
+def extract_to_raw() -> None:
+    sessao = requests.Session()
+    lista_capitais = ler_dados_capitais(CAMINHO_ARQUIVO_CAPITAIS)
+
+    for api in DADOS_API:
+        nome = api["nome"]
+        endpoint = api["endpoint"]
+        campos = api["campos"]
+        api["dados_api"] = []
+        for capital in lista_capitais:
+            uf = capital["uf"]
+            nome_capital = capital["name"]
+            latitude = capital["latitude"]
+            longitude = capital["longitude"]
+            dados_api = consultar_api(url=endpoint,sessao=sessao,latitude=latitude,longitude=longitude,campos=campos)
+            dados_api["uf"] = uf
+            dados_api["name"] = nome_capital
+            api["dados_api"].append(dados_api)
+
+        gravar_na_raw(pasta=CAMINHO_PASTA_RAW,nome_arquivo=nome,lista_dados=api["dados_api"])
+
+
+if __name__ == "__main__":
+    extract_to_raw() 
 
