@@ -27,7 +27,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Untitled.png'"
+                    "Value": "'Untitled (2).png'"
                   }
                 }
               },
@@ -36,7 +36,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Untitled9677796876783894.png"
+                    "ItemName": "Untitled_(2)6156442345668777.png"
                   }
                 }
               },
@@ -44,6 +44,37 @@
                 "expr": {
                   "Literal": {
                     "Value": "'Normal'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
                   }
                 }
               }
