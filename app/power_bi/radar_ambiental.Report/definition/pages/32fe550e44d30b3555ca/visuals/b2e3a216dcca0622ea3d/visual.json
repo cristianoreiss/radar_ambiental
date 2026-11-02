@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b2e3a216dcca0622ea3d",
+  "position": {
+    "x": 901.67487684729065,
+    "y": 437.5960591133005,
+    "z": 7004,
+    "height": 116.32826747720365,
+    "width": 202.31003039513678,
+    "tabOrder": 7004
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "pm10"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(radar_horario.pm10)",
+              "nativeQueryRef": "Média de pm10"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "radar_horario"
+                      }
+                    },
+                    "Property": "pm10"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1793f69d44c0ab9a87b6",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "radar_horario"
+                  }
+                },
+                "Property": "pm10"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

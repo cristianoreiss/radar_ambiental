@@ -4,8 +4,8 @@ from pathlib import Path
 
 CAMINHO_PASTA_RAW = Path("data/raw")
 CAMINHO_PASTA_BRONZE = Path("data/bronze")
-CAMINHO_DADOS_QUALITY = CAMINHO_PASTA_RAW / "air-quality_raw.json"
-CAMINHO_DADOS_FORECAST = CAMINHO_PASTA_RAW / "forecast_raw.json"
+CAMINHO_DADOS_QUALITY = CAMINHO_PASTA_RAW / "raw_air-quality.json"
+CAMINHO_DADOS_FORECAST = CAMINHO_PASTA_RAW / "raw_forecast.json"
 os.makedirs(CAMINHO_PASTA_BRONZE, exist_ok=True)
 
 dataframe_forecast = pl.read_json(CAMINHO_DADOS_FORECAST)
@@ -25,5 +25,5 @@ dataframe_quality = dataframe_quality.with_columns(
 )
 dataframe_quality = dataframe_quality.unnest().explode(columns=campo_valores_quality)
 
-dataframe_forecast.write_parquet(CAMINHO_PASTA_BRONZE / "forecast_bronze.parquet")
-dataframe_quality.write_parquet(CAMINHO_PASTA_BRONZE / "air-quality_bronze.parquet")
+dataframe_forecast.write_parquet(CAMINHO_PASTA_BRONZE / "bronze_forecast.parquet")
+dataframe_quality.write_parquet(CAMINHO_PASTA_BRONZE / "bronze_air-quality.parquet")

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e7252b3e03d793035dd0",
+  "position": {
+    "x": 1061.8325123152708,
+    "y": 471.64532019704433,
+    "z": 7005,
+    "height": 116.32826747720365,
+    "width": 202.31003039513678,
+    "tabOrder": 7005
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "ozone"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(radar_horario.ozone)",
+              "nativeQueryRef": "Média de ozone"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "radar_horario"
+                      }
+                    },
+                    "Property": "ozone"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ff69e221031e1eb93e1e",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "radar_horario"
+                  }
+                },
+                "Property": "ozone"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

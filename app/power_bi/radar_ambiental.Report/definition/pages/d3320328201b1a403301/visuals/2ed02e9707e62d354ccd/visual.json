@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "2ed02e9707e62d354ccd",
+  "position": {
+    "x": 837.519071310116,
+    "y": 71.747927031509121,
+    "z": 6000,
+    "height": 116.32826747720365,
+    "width": 202.31003039513678,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_resumo_diario"
+                        }
+                      },
+                      "Property": "media_pm10"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_resumo_diario.media_pm10)",
+              "nativeQueryRef": "Soma de media_pm10"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "radar_resumo_diario"
+                      }
+                    },
+                    "Property": "media_pm10"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

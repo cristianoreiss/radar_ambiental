@@ -69,10 +69,18 @@ for capital in geo_capitais:
 
 # === Criar arquivo raw
 
-caminho_forecast = os.path.join(CAMINHO_PASTA_RAW,"forecast_raw.json")
+caminho_forecast = os.path.join(CAMINHO_PASTA_RAW,"raw_forecast.json")
 with open(caminho_forecast,"w",encoding="utf-8") as arquivo:
     json.dump(dados_previsao,arquivo,indent=4, ensure_ascii=False)
 
-caminho_air_quality = os.path.join(CAMINHO_PASTA_RAW,"air-quality_raw.json")
+caminho_air_quality = os.path.join(CAMINHO_PASTA_RAW,"raw_air-quality.json")
 with open(caminho_air_quality,"w",encoding="utf-8") as arquivo:
     json.dump(dados_qualidade,arquivo,indent=4, ensure_ascii=False)
+
+######################################################
+
+## def ler os dados da raw
+## def consultar apis
+## def gravar dados parquet na pasta bronze
+## def função geral 
+

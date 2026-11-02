@@ -1,8 +1,25 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "d3320328201b1a403301",
-  "displayName": "Página 1",
+  "displayName": "Resumo Diário",
   "displayOption": "FitToPage",
-  "height": 1080,
-  "width": 1920
+  "height": 1024,
+  "width": 1440,
+  "visualInteractions": [
+    {
+      "source": "16eaa7c1ee0078e6067b",
+      "target": "1358a277088e8d340d46",
+      "type": "NoFilter"
+    },
+    {
+      "source": "16eaa7c1ee0078e6067b",
+      "target": "1be23b604d4a267763a1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "16eaa7c1ee0078e6067b",
+      "target": "3e9061ac6eae524e48bd",
+      "type": "NoFilter"
+    }
+  ]
 }

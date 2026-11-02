@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "4122e35c02214c483796",
+  "position": {
+    "x": 42.99088145896657,
+    "y": 72.072948328267486,
+    "z": 2000,
+    "height": 116.32826747720365,
+    "width": 202.31003039513678,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_resumo_diario"
+                        }
+                      },
+                      "Property": "media_temperatura"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_resumo_diario.media_temperatura)",
+              "nativeQueryRef": "Soma de media_temperatura"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "radar_resumo_diario"
+                      }
+                    },
+                    "Property": "media_temperatura"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "785fc1ff7eb3ae6eeb62",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "radar_resumo_diario"
+                  }
+                },
+                "Property": "media_temperatura"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "1be23b604d4a267763a1",
+  "position": {
+    "x": 42.772802653399665,
+    "y": 578.12271973466,
+    "z": 10000,
+    "height": 347.70149253731341,
+    "width": 386.33499170812604,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "radar_resumo_diario"
+                    }
+                  },
+                  "Property": "uf"
+                }
+              },
+              "queryRef": "radar_resumo_diario.uf",
+              "nativeQueryRef": "uf",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_resumo_diario"
+                        }
+                      },
+                      "Property": "max_temperatura"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_resumo_diario.max_temperatura)",
+              "nativeQueryRef": "Soma de max_temperatura"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "radar_resumo_diario"
+                      }
+                    },
+                    "Property": "max_temperatura"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

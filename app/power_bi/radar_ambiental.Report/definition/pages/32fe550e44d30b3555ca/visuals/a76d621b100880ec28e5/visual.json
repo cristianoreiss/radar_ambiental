@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "a76d621b100880ec28e5",
+  "position": {
+    "x": 724.68837209302319,
+    "y": 471.51627906976745,
+    "z": 6000,
+    "height": 257.19069767441857,
+    "width": 715.3116279069767,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "radar_horario"
+                    }
+                  },
+                  "Property": "time_local"
+                }
+              },
+              "queryRef": "radar_horario.time_local",
+              "nativeQueryRef": "time_local",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "pm2_5"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_horario.pm2_5)",
+              "nativeQueryRef": "Soma de pm2_5"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "pm10"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_horario.pm10)",
+              "nativeQueryRef": "Soma de pm10"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "ozone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_horario.ozone)",
+              "nativeQueryRef": "Soma de ozone"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "radar_horario"
+                  }
+                },
+                "Property": "time_local"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

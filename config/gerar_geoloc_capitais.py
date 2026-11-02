@@ -32,9 +32,9 @@ def buscar_candidatos(sessao:requests.Session,capital:str,url:str) -> list:
     }
     try:
         resultado = sessao.get(url=url,params=parametros,timeout=10)
-    except requests.exceptions.HTTPError:
-        logger.exception("API indisponível: %s", resultado.status_code)
-        raise
+        resultado.raise_for_status() # verifica o cód do status HTTP e lança uma exceção caso retorne um erro HTTP
+    except requests.exceptions.HTTPError as erro:
+        logger.exception("API indisponível: %s", erro)
     lista_candidatos = resultado.json().get("results",[])
     logger.info("Lista de cidades candidatas gerada")
     return lista_candidatos

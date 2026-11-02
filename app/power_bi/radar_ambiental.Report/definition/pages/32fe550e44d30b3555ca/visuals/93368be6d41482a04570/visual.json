@@ -1,0 +1,103 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "93368be6d41482a04570",
+  "position": {
+    "x": 0,
+    "y": 238.43720930232558,
+    "z": 4000,
+    "height": 227.72093023255815,
+    "width": 1440,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "radar_horario"
+                    }
+                  },
+                  "Property": "time_local"
+                }
+              },
+              "queryRef": "radar_horario.time_local",
+              "nativeQueryRef": "time_local",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "temperature_2m"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_horario.temperature_2m)",
+              "nativeQueryRef": "Soma de temperature_2m"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "radar_horario"
+                        }
+                      },
+                      "Property": "relative_humidity_2m"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(radar_horario.relative_humidity_2m)",
+              "nativeQueryRef": "Soma de relative_humidity_2m"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "radar_horario"
+                  }
+                },
+                "Property": "time_local"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
