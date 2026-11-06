@@ -10,23 +10,6 @@ ARQUIVOS_RAW = [
     "raw_air-quality.json"
 ]
 
-"""
-campos_units_forecast = dataframe_forecast["hourly_units"].struct.fields
-campo_valores_forecast = dataframe_forecast["hourly"].struct.fields
-dataframe_forecast = dataframe_forecast.with_columns(
-    pl.col("hourly_units").struct.rename_fields([f"{c}_unit" for c in campos_units_forecast])
-)
-dataframe_forecast = dataframe_forecast.unnest().explode(columns=campo_valores_forecast)
-
-campo_units_quality = dataframe_quality["hourly_units"].struct.fields
-campo_valores_quality = dataframe_quality["hourly"].struct.fields
-dataframe_quality = dataframe_quality.with_columns(
-    pl.col("hourly_units").struct.rename_fields([f"{c}_unit" for c in campo_units_quality])
-)
-dataframe_quality = dataframe_quality.unnest().explode(columns=campo_valores_quality)
-
-"""
-
 def ler_dados_raw(
         caminho_raw: Path,
         nome_arquivo: str

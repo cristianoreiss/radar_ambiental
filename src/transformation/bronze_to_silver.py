@@ -11,7 +11,6 @@ ARQUIVOS_BRONZE = [
     "bronze_air-quality.parquet"
 ]
 
-
 def ler_dados_bronze(
         caminho_bronze: Path,
         nome_arquivo: str
