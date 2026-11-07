@@ -4,10 +4,10 @@
   "position": {
     "x": 935.83333333333337,
     "y": 580,
-    "z": 6000,
+    "z": 3000,
     "height": 206.66666666666669,
     "width": 650,
-    "tabOrder": 6000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "lineChart",
@@ -23,12 +23,13 @@
                       "Entity": "radar_horario"
                     }
                   },
-                  "Property": "time_local"
+                  "Property": "hora"
                 }
               },
-              "queryRef": "radar_horario.time_local",
-              "nativeQueryRef": "time_local",
-              "active": true
+              "queryRef": "radar_horario.hora",
+              "nativeQueryRef": "Horário",
+              "active": true,
+              "displayName": "Horário"
             }
           ]
         },
@@ -51,7 +52,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.pm2_5)",
-              "nativeQueryRef": "Soma de pm2_5"
+              "nativeQueryRef": "PM2.5 (µg/m³)",
+              "displayName": "PM2.5 (µg/m³)"
             },
             {
               "field": {
@@ -70,7 +72,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.pm10)",
-              "nativeQueryRef": "Soma de pm10"
+              "nativeQueryRef": "PM10 (µg/m³)",
+              "displayName": "PM10 (µg/m³)"
             }
           ]
         },
@@ -93,7 +96,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.ozone)",
-              "nativeQueryRef": "Soma de ozone"
+              "nativeQueryRef": "Ozônio (µg/m³)",
+              "displayName": "Ozônio (µg/m³)"
             }
           ]
         }
@@ -108,7 +112,7 @@
                     "Entity": "radar_horario"
                   }
                 },
-                "Property": "time_local"
+                "Property": "hora"
               }
             },
             "direction": "Ascending"
@@ -116,6 +120,176 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "y2Axis": [
+        {
+          "properties": {
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#65A9E8'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.pm2_5)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B17ADB'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.pm10)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F7911C'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.ozone)"
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "background": [
@@ -156,6 +330,26 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Evolução dos Poluentes'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

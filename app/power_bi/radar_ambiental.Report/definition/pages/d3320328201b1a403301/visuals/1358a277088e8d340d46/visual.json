@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "radar_resumo_diario"
+                      "Entity": "radar_diario"
                     }
                   },
                   "Property": "uf"
@@ -42,7 +42,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "media_temperatura"
@@ -67,7 +67,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "media_umidade"

@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "radar_resumo_diario"
+                      "Entity": "radar_diario"
                     }
                   },
                   "Property": "uf"
@@ -41,7 +41,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "soma_precipitacao"
@@ -65,7 +65,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "radar_resumo_diario"
+                        "Entity": "radar_diario"
                       }
                     },
                     "Property": "soma_precipitacao"

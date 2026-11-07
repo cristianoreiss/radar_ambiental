@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "radar_resumo_diario"
+                      "Entity": "radar_diario"
                     }
                   },
                   "Property": "date"
@@ -40,7 +40,7 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "radar_resumo_diario"
+                    "Entity": "radar_diario"
                   }
                 },
                 "Property": "date"
@@ -82,7 +82,7 @@
                 "From": [
                   {
                     "Name": "r",
-                    "Entity": "radar_resumo_diario",
+                    "Entity": "radar_diario",
                     "Type": 0
                   }
                 ],

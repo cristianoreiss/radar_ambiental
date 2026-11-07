@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "057eb7c55524b3526d17",
+  "name": "be853a13208b8ea99e77",
   "position": {
-    "x": 577.77777777777771,
-    "y": 127.77777777777777,
-    "z": 2000,
-    "height": 72.072948328267486,
-    "width": 202.31003039513678,
-    "tabOrder": 2000
+    "x": 469,
+    "y": 114,
+    "z": 10000,
+    "height": 66,
+    "width": 202,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,12 +23,13 @@
                       "Entity": "radar_horario"
                     }
                   },
-                  "Property": "uf"
+                  "Property": "uf_capital"
                 }
               },
-              "queryRef": "radar_horario.uf",
-              "nativeQueryRef": "uf",
-              "active": true
+              "queryRef": "radar_horario.uf_capital",
+              "nativeQueryRef": "Capital",
+              "active": true,
+              "displayName": "Capital"
             }
           ]
         }
@@ -83,7 +84,7 @@
                                   "Source": "r"
                                 }
                               },
-                              "Property": "uf"
+                              "Property": "uf_capital"
                             }
                           }
                         ],
@@ -91,7 +92,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'RJ'"
+                                "Value": "'RJ - Rio de Janeiro'"
                               }
                             }
                           ]
@@ -116,6 +117,73 @@
               }
             },
             "selectAllCheckboxEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1C2B23'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropdown": [
+        {
+          "properties": {
+            "accentBarShow": {
               "expr": {
                 "Literal": {
                   "Value": "true"

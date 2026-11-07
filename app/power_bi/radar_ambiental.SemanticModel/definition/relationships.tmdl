@@ -15,7 +15,7 @@ relationship 0dbceaf3-4881-4b34-86d4-f78a73c80bf6
 
 relationship 6eea925f-de69-4508-98f7-1942ca9ea83b
 	joinOnDateBehavior: datePartOnly
-	fromColumn: radar_resumo_diario.date
+	fromColumn: radar_diario.date
 	toColumn: LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908.Date
 
 relationship AutoDetected_cc053d67-5024-48bb-bdb5-0fb7dc2b1562
@@ -23,6 +23,6 @@ relationship AutoDetected_cc053d67-5024-48bb-bdb5-0fb7dc2b1562
 	toColumn: dim_capitais.uf
 
 relationship AutoDetected_50fb4396-bba5-4bae-a94d-09b44737d38c
-	fromColumn: radar_resumo_diario.uf
+	fromColumn: radar_diario.uf
 	toColumn: dim_capitais.uf
 

@@ -26,13 +26,12 @@ table radar_horario
 
 	column temperature_2m
 		dataType: double
+		formatString: 0.0
 		lineageTag: 0ab29e39-f37a-4a37-961f-6258a378c620
 		summarizeBy: sum
 		sourceColumn: temperature_2m
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column precipitation
 		dataType: double
@@ -165,13 +164,34 @@ table radar_horario
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column hora
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 6aab408d-3e16-4e61-a2a1-dd6879a375e0
+		summarizeBy: none
+		sourceColumn: hora
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column uf_capital
+		dataType: string
+		lineageTag: af231988-b380-41c0-9760-f079dec70c0a
+		summarizeBy: none
+		sourceColumn: uf_capital
+
+		annotation SummarizationSetBy = Automatic
+
 	partition radar_horario = m
 		mode: import
 		source =
 				let
-				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_horario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_horario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				    #"Personalização Adicionada" = Table.AddColumn(Fonte, "uf_capital", each [uf] & " - " & [name]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"uf_capital", type text}})
 				in
-				    Fonte
+				    #"Tipo Alterado"
 
 	annotation PBI_NavigationStepName = Navegação
 

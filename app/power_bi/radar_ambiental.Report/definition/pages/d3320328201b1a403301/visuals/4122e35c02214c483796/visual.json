@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "media_temperatura"
@@ -46,7 +46,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "radar_resumo_diario"
+                        "Entity": "radar_diario"
                       }
                     },
                     "Property": "media_temperatura"
@@ -62,28 +62,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "785fc1ff7eb3ae6eeb62",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "radar_resumo_diario"
-                  }
-                },
-                "Property": "media_temperatura"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

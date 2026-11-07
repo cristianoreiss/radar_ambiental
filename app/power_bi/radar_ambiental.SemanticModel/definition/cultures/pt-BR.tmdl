@@ -2,20 +2,1272 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "2.0.0",
+			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "radar_resumo_diario.uf": {
+			    "radar_diario.uf": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "radar_resumo_diario",
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim capitais": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_capitais": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "dim_capitais.uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
 			          "ConceptualProperty": "uf"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "UF": {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.latitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "latitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "freedom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "autonomy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "liberty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "scope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.longitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "longitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "longitude": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.timezone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "timezone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timezone": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regiao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "radar horario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "radar_horario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "radar_horario.time.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.precipitation_probability": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "precipitation_probability"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precipitation probability": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precipitation_probability": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "probability": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "precipitation likelihood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "precipitation possibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "likelihood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "possibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "precipitation chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "precipitation prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.temperature_2m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "temperature_2m"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temperature 2m": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temperature_2m": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.precipitation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "precipitation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precipitation": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rainfall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "snow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sleet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "drizzle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.relative_humidity_2m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "relative_humidity_2m"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "relative humidity 2m": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "relative_humidity_2m": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.ozone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "ozone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ozone": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.latitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "latitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "freedom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "autonomy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "liberty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "scope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.longitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "longitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "longitude": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.timezone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "timezone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timezone": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regiao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Região": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -25,6 +1277,4875 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "radar_horario.time_local": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "time_local"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time local": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time_local": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "local": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "duration local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable local": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "native": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "resident": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "home-grown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "narrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "radar_horario.time_local.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time_local",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time_local.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time_local",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time local ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration local ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "interval local ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment local ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period local ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "timetable local ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time_local.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time_local",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time local trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration local trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "interval local trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment local trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period local trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "timetable local trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time_local.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time_local",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time local mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration local mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "interval local mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment local mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period local mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "timetable local mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.time_local.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "time_local",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time local dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration local dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "interval local dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment local dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period local dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "timetable local dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Data": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "radar_horario.date.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.date.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.date.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.date.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hora": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Horário": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "radar_horario.uf_capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "uf_capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "uf capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "uf_capital": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "uf wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "uf hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "uf center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "uf headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "Capital": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "radar diario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "radar_diario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "radar_diario.date.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.date.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.date.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.date.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.min_temperatura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "min_temperatura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min temperatura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "min_temperatura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "minimum temperatura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_temperatura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_temperatura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max temperatura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_temperatura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum temperatura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.media_temperatura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "media_temperatura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media temperatura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_temperatura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.soma_precipitacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "soma_precipitacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "soma precipitacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "soma_precipitacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_precipitacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_precipitacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max precipitacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_precipitacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum precipitacao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.horas_com_chuva": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "horas_com_chuva"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com chuva": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com chuva": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_chuva": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_prob_chuva": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_prob_chuva"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max prob chuva": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_prob_chuva": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum prob chuva": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.media_umidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "media_umidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media umidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_umidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.min_umidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "min_umidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min umidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "min_umidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "minimum umidade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_umidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_umidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max umidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_umidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum umidade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.media_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "media_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.horas_com_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "horas_com_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.media_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "media_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.horas_com_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "horas_com_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com pm 10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.media_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "media_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.horas_com_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "horas_com_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.horas_observada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "horas_observadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas observada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora observada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_observadas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "radar_diario_date_trimestre_has_radar_diario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_diario.date.trimestre"
+			          }
+			        },
+			        "radar_diario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_diario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_diario.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_diario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_ano_has_radar_diario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.ano": {
+			          "Target": {
+			            "Entity": "radar_diario.date.ano"
+			          }
+			        },
+			        "radar_diario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_diario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.ano"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_diario.date.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_diario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_hierarquia_de_data_has_radar_diario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_diario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_diario.date.dia": {
+			          "Target": {
+			            "Entity": "radar_diario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_hierarquia_de_data_has_radar_diario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_diario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_diario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_diario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_hierarquia_de_data_has_radar_diario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_diario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_diario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_diario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_hierarquia_de_data_has_radar_diario_date_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_diario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_diario.date.ano": {
+			          "Target": {
+			            "Entity": "radar_diario.date.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date": {
+			          "Target": {
+			            "Entity": "radar_diario.date"
+			          }
+			        },
+			        "radar_diario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_diario.date.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_mê_has_radar_horario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.date.mê"
+			          }
+			        },
+			        "radar_horario.date.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.dia"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_trimestre_has_radar_horario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.date.trimestre"
+			          }
+			        },
+			        "radar_horario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_ano_has_radar_horario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.date.ano"
+			          }
+			        },
+			        "radar_horario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.ano"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.date.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_hierarquia_de_data_has_radar_horario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.date.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_hierarquia_de_data_has_radar_horario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_hierarquia_de_data_has_radar_horario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.date.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_hierarquia_de_data_has_radar_horario_date_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.date.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.date.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.date.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "radar_horario_date_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.date": {
+			          "Target": {
+			            "Entity": "radar_horario.date"
+			          }
+			        },
+			        "radar_horario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.date.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.date"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hierarquia_de_data1"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_mê_has_radar_horario_time_local_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.mê"
+			          }
+			        },
+			        "radar_horario.time_local.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.dia"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time_local.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_trimestre_has_radar_horario_time_local_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.trimestre"
+			          }
+			        },
+			        "radar_horario.time_local.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_ano_has_radar_horario_time_local_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.ano"
+			          }
+			        },
+			        "radar_horario.time_local.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.ano"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time_local.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_hierarquia_de_data_has_radar_horario_time_local_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time_local.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_hierarquia_de_data_has_radar_horario_time_local_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time_local.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_hierarquia_de_data_has_radar_horario_time_local_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time_local.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_hierarquia_de_data_has_radar_horario_time_local_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time_local.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_local_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time_local": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local"
+			          }
+			        },
+			        "radar_horario.time_local.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time_local"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "time_locals_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_mê_has_radar_horario_time_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time.mê"
+			          }
+			        },
+			        "radar_horario.time.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.time.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.dia"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_trimestre_has_radar_horario_time_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time.trimestre"
+			          }
+			        },
+			        "radar_horario.time.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_ano_has_radar_horario_time_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.time.ano"
+			          }
+			        },
+			        "radar_horario.time.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.ano"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.trimestre"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_horario.time.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_horario.time.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_hierarquia_de_data_has_radar_horario_time_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time.dia": {
+			          "Target": {
+			            "Entity": "radar_horario.time.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_hierarquia_de_data_has_radar_horario_time_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time.mê": {
+			          "Target": {
+			            "Entity": "radar_horario.time.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_hierarquia_de_data_has_radar_horario_time_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time.trimestre": {
+			          "Target": {
+			            "Entity": "radar_horario.time.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_hierarquia_de_data_has_radar_horario_time_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time.hierarquia_de_data"
+			          }
+			        },
+			        "radar_horario.time.ano": {
+			          "Target": {
+			            "Entity": "radar_horario.time.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "radar_horario_time_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario.time": {
+			          "Target": {
+			            "Entity": "radar_horario.time"
+			          }
+			        },
+			        "radar_horario.time.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "radar_horario.time.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario.time"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "times_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_dim_capitais": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_dim_capitaises"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "radar_diario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_radar_diarios"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_dim_capitais": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_dim_capitaises"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "radar_horario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_radar_horarios"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_horas_observada": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.horas_observada": {
+			          "Target": {
+			            "Entity": "radar_diario.horas_observada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.horas_observada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_horas_observadas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_horas_com_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.horas_com_ozonio": {
+			          "Target": {
+			            "Entity": "radar_diario.horas_com_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.horas_com_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_horas_com_ozonios"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_media_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.media_ozonio": {
+			          "Target": {
+			            "Entity": "radar_diario.media_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.media_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_media_ozonios"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_ozonio": {
+			          "Target": {
+			            "Entity": "radar_diario.max_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_ozonios"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_horas_com_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.horas_com_pm_10": {
+			          "Target": {
+			            "Entity": "radar_diario.horas_com_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.horas_com_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_horas_com_pm_10"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_media_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.media_pm_10": {
+			          "Target": {
+			            "Entity": "radar_diario.media_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.media_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_media_pm_10"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_pm_10": {
+			          "Target": {
+			            "Entity": "radar_diario.max_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_pm_10"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_horas_com_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.horas_com_pm_2_5": {
+			          "Target": {
+			            "Entity": "radar_diario.horas_com_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.horas_com_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_horas_com_pm_2_5"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_media_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.media_pm_2_5": {
+			          "Target": {
+			            "Entity": "radar_diario.media_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.media_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_media_pm_2_5"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_pm_2_5": {
+			          "Target": {
+			            "Entity": "radar_diario.max_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_pm_2_5"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_umidade": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_umidade": {
+			          "Target": {
+			            "Entity": "radar_diario.max_umidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_umidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_umidades"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_min_umidade": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.min_umidade": {
+			          "Target": {
+			            "Entity": "radar_diario.min_umidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.min_umidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_min_umidades"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_media_umidade": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.media_umidade": {
+			          "Target": {
+			            "Entity": "radar_diario.media_umidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.media_umidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_media_umidades"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_prob_chuva": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_prob_chuva": {
+			          "Target": {
+			            "Entity": "radar_diario.max_prob_chuva"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_prob_chuva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_prob_chuvas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_horas_com_chuva": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.horas_com_chuva": {
+			          "Target": {
+			            "Entity": "radar_diario.horas_com_chuva"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.horas_com_chuva"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_horas_com_chuvas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_precipitacao": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_precipitacao": {
+			          "Target": {
+			            "Entity": "radar_diario.max_precipitacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_precipitacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_precipitacaos"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_soma_precipitacao": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.soma_precipitacao": {
+			          "Target": {
+			            "Entity": "radar_diario.soma_precipitacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.soma_precipitacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_soma_precipitacaos"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_media_temperatura": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.media_temperatura": {
+			          "Target": {
+			            "Entity": "radar_diario.media_temperatura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.media_temperatura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_media_temperaturas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_temperatura": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_temperatura": {
+			          "Target": {
+			            "Entity": "radar_diario.max_temperatura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_temperatura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_temperaturas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_min_temperatura": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.min_temperatura": {
+			          "Target": {
+			            "Entity": "radar_diario.min_temperatura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.min_temperatura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_min_temperaturas"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.date": {
+			          "Target": {
+			            "Entity": "radar_diario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_dates"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_uf_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.uf_capital": {
+			          "Target": {
+			            "Entity": "radar_horario.uf_capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.uf_capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_uf_capitals"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.hora": {
+			          "Target": {
+			            "Entity": "radar_horario.hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_horas"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.date": {
+			          "Target": {
+			            "Entity": "radar_horario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_dates"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_time_local": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.time_local": {
+			          "Target": {
+			            "Entity": "radar_horario.time_local"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time_local"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_time_locals"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_regiao": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.regiao": {
+			          "Target": {
+			            "Entity": "radar_horario.regiao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.regiao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_regiaos"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_timezone": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.timezone": {
+			          "Target": {
+			            "Entity": "radar_horario.timezone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.timezone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_timezones"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.longitude": {
+			          "Target": {
+			            "Entity": "radar_horario.longitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.longitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_longitudes"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.latitude": {
+			          "Target": {
+			            "Entity": "radar_horario.latitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.latitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_latitudes"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.name": {
+			          "Target": {
+			            "Entity": "radar_horario.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_names"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_ozone": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.ozone": {
+			          "Target": {
+			            "Entity": "radar_horario.ozone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.ozone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_ozone"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.pm_2_5": {
+			          "Target": {
+			            "Entity": "radar_horario.pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_pm_2_5"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.pm_10": {
+			          "Target": {
+			            "Entity": "radar_horario.pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_pm_10"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_relative_humidity_2m": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.relative_humidity_2m": {
+			          "Target": {
+			            "Entity": "radar_horario.relative_humidity_2m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.relative_humidity_2m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_relative_humidity_2ms"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_precipitation": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.precipitation": {
+			          "Target": {
+			            "Entity": "radar_horario.precipitation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.precipitation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_precipitations"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_temperature_2m": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.temperature_2m": {
+			          "Target": {
+			            "Entity": "radar_horario.temperature_2m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.temperature_2m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_temperature_2ms"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_precipitation_probability": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.precipitation_probability": {
+			          "Target": {
+			            "Entity": "radar_horario.precipitation_probability"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.precipitation_probability"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_precipitation_probabilities"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_time": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.time": {
+			          "Target": {
+			            "Entity": "radar_horario.time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_times"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_regiao": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.regiao": {
+			          "Target": {
+			            "Entity": "dim_capitais.regiao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.regiao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_regiaos"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_timezone": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.timezone": {
+			          "Target": {
+			            "Entity": "dim_capitais.timezone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.timezone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_timezones"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.longitude": {
+			          "Target": {
+			            "Entity": "dim_capitais.longitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.longitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_longitudes"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.latitude": {
+			          "Target": {
+			            "Entity": "dim_capitais.latitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.latitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_latitudes"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_uf": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.uf": {
+			          "Target": {
+			            "Entity": "dim_capitais.uf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.uf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_ufs"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.name": {
+			          "Target": {
+			            "Entity": "dim_capitais.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Name": {
+			              "Role": "dim_capitais.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_dim_capitaises"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_mê_has_radar_diario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_diario.date.mê"
+			          }
+			        },
+			        "radar_diario.date.dia": {
+			          "Target": {
+			            "Entity": "radar_diario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.dia"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_diario.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
 			    }
 			  }
 			}

@@ -4,10 +4,10 @@
   "position": {
     "x": 265,
     "y": 347.5,
-    "z": 4000,
+    "z": 1000,
     "height": 208.33333333333334,
-    "width": 1313.3333333333335,
-    "tabOrder": 4000
+    "width": 1319,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "lineChart",
@@ -23,12 +23,13 @@
                       "Entity": "radar_horario"
                     }
                   },
-                  "Property": "time_local"
+                  "Property": "hora"
                 }
               },
-              "queryRef": "radar_horario.time_local",
-              "nativeQueryRef": "time_local",
-              "active": true
+              "queryRef": "radar_horario.hora",
+              "nativeQueryRef": "Horário",
+              "active": true,
+              "displayName": "Horário"
             }
           ]
         },
@@ -51,7 +52,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.temperature_2m)",
-              "nativeQueryRef": "Soma de temperature_2m"
+              "nativeQueryRef": "Temperatura (ºC)",
+              "displayName": "Temperatura (ºC)"
             }
           ]
         },
@@ -74,7 +76,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.relative_humidity_2m)",
-              "nativeQueryRef": "Soma de relative_humidity_2m"
+              "nativeQueryRef": "Umidade (%)",
+              "displayName": "Umidade (%)"
             }
           ]
         }
@@ -89,7 +92,7 @@
                     "Entity": "radar_horario"
                   }
                 },
-                "Property": "time_local"
+                "Property": "hora"
               }
             },
             "direction": "Ascending"
@@ -97,6 +100,178 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dotted'"
+                }
+              }
+            },
+            "gridlineThickness": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "gridlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dotted'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A5E34B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "y2Axis": [
+        {
+          "properties": {
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#32D1C4'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A5E34B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.temperature_2m)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#32D1C4'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.relative_humidity_2m)"
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "background": [
@@ -137,6 +312,26 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Evolução Horária da Temperatura e Umidade '"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

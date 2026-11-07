@@ -1,4 +1,4 @@
-table radar_resumo_diario
+table radar_diario
 	lineageTag: d121628c-41f1-42af-a4db-8beb94cbe409
 
 	column uf
@@ -217,11 +217,11 @@ table radar_resumo_diario
 
 		annotation SummarizationSetBy = Automatic
 
-	partition radar_resumo_diario = m
+	partition radar_diario = m
 		mode: import
 		source =
 				let
-				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_resumo_diario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_radar_diario.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
 				in
 				    Fonte
 

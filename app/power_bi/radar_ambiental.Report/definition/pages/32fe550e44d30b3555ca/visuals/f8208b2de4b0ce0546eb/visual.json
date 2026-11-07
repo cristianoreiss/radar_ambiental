@@ -4,10 +4,10 @@
   "position": {
     "x": 265.71428571428572,
     "y": 810,
-    "z": 7000,
+    "z": 4000,
     "height": 217.14285714285717,
     "width": 1312.8571428571429,
-    "tabOrder": 7000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -23,12 +23,13 @@
                       "Entity": "radar_horario"
                     }
                   },
-                  "Property": "time_local"
+                  "Property": "hora"
                 }
               },
-              "queryRef": "radar_horario.time_local",
-              "nativeQueryRef": "time_local",
-              "active": true
+              "queryRef": "radar_horario.hora",
+              "nativeQueryRef": "Horário",
+              "active": true,
+              "displayName": "Horário"
             }
           ]
         },
@@ -51,7 +52,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.temperature_2m)",
-              "nativeQueryRef": "Soma de temperature_2m"
+              "nativeQueryRef": "Temperatura (ºC)",
+              "displayName": "Temperatura (ºC)"
             },
             {
               "field": {
@@ -70,7 +72,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.relative_humidity_2m)",
-              "nativeQueryRef": "Soma de relative_humidity_2m"
+              "nativeQueryRef": "Umidade (%)",
+              "displayName": "Umidade (%)"
             },
             {
               "field": {
@@ -89,7 +92,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.pm2_5)",
-              "nativeQueryRef": "Soma de pm2_5"
+              "nativeQueryRef": "PM2.5 (µg/m³)",
+              "displayName": "PM2.5 (µg/m³)"
             },
             {
               "field": {
@@ -108,7 +112,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.pm10)",
-              "nativeQueryRef": "Soma de pm10"
+              "nativeQueryRef": "PM10 (µg/m³)",
+              "displayName": "PM10 (µg/m³)"
             },
             {
               "field": {
@@ -127,27 +132,11 @@
                 }
               },
               "queryRef": "Sum(radar_horario.ozone)",
-              "nativeQueryRef": "Soma de ozone"
+              "nativeQueryRef": "Ozônio (µg/m³)",
+              "displayName": "Ozônio (µg/m³)"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "radar_horario"
-                  }
-                },
-                "Property": "time_local"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -177,7 +166,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "287.4312323274494D"
+                  "Value": "271.4547169700153D"
                 }
               }
             }
@@ -191,7 +180,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "242.82173248730058D"
+                  "Value": "224.80783287340097D"
                 }
               }
             }
@@ -205,7 +194,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "238.50949254841083D"
+                  "Value": "224.48014244358905D"
                 }
               }
             }
@@ -219,7 +208,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "236.46631707015047D"
+                  "Value": "212.51230927262188D"
                 }
               }
             }
@@ -233,13 +222,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "251.47749205054376D"
+                  "Value": "240.49799658639563D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Sum(radar_horario.ozone)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "radar_horario.hora"
           }
         }
       ],
@@ -289,6 +292,77 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "radar_horario"
+                                }
+                              },
+                              "Property": "temperature_2m"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient3": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#4A90B8'"
+                              }
+                            }
+                          },
+                          "mid": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#A5D65D'"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#D96B6B'"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Sum(radar_horario.temperature_2m)"
+          }
         }
       ],
       "rowHeaders": [
@@ -303,6 +377,203 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "unfrozen": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.temperature_2m)"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.relative_humidity_2m)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.pm2_5)"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.pm10)"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.ozone)"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Compact'"
                 }
               }
             }

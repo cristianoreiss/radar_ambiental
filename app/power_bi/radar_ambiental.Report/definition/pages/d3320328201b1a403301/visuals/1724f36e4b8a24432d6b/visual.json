@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "soma_precipitacao"
@@ -46,7 +46,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "radar_resumo_diario"
+                        "Entity": "radar_diario"
                       }
                     },
                     "Property": "soma_precipitacao"
@@ -62,28 +62,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6182e4b6674bbb895b1d",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "radar_resumo_diario"
-                  }
-                },
-                "Property": "soma_precipitacao"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

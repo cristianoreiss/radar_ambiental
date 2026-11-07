@@ -3,11 +3,11 @@
   "name": "6acbc66116437dc10594",
   "position": {
     "x": 262.5,
-    "y": 201.66666666666669,
-    "z": 7001,
-    "height": 115,
+    "y": 199,
+    "z": 5000,
+    "height": 125,
     "width": 249.16666666666669,
-    "tabOrder": 7001
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -32,7 +32,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.temperature_2m)",
-              "nativeQueryRef": "Média de temperature_2m"
+              "nativeQueryRef": "Temperatura Média",
+              "displayName": "Temperatura Média"
             }
           ]
         }
@@ -61,29 +62,125 @@
         "isDefaultSort": true
       }
     },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5313fc6028cdc6e904ce",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "radar_horario"
+    "objects": {
+      "fillCustom": [
+        {
+          "properties": {
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#26352D'"
+                    }
                   }
-                },
-                "Property": "temperature_2m"
+                }
               }
-            },
-            "Function": 1
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         },
-        "type": "Advanced"
-      }
-    ]
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "divider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "26D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A5E34B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B7C6BD'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
   }
 }

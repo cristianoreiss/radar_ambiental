@@ -110,7 +110,7 @@ table LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908
 
 	partition LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('radar_resumo_diario'[date])), 1, 1), Date(Year(MAX('radar_resumo_diario'[date])), 12, 31))
+		source = Calendar(Date(Year(MIN('radar_diario'[date])), 1, 1), Date(Year(MAX('radar_diario'[date])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

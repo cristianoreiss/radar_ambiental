@@ -4,10 +4,10 @@
   "position": {
     "x": 262.5,
     "y": 580,
-    "z": 5000,
+    "z": 2000,
     "height": 207.5,
     "width": 649.16666666666674,
-    "tabOrder": 5000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "lineStackedColumnComboChart",
@@ -23,12 +23,13 @@
                       "Entity": "radar_horario"
                     }
                   },
-                  "Property": "time_local"
+                  "Property": "hora"
                 }
               },
-              "queryRef": "radar_horario.time_local",
-              "nativeQueryRef": "time_local",
-              "active": true
+              "queryRef": "radar_horario.hora",
+              "nativeQueryRef": "Horário",
+              "active": true,
+              "displayName": "Horário"
             }
           ]
         },
@@ -51,7 +52,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.precipitation)",
-              "nativeQueryRef": "Soma de precipitation"
+              "nativeQueryRef": "Precipitação (mm)",
+              "displayName": "Precipitação (mm)"
             }
           ]
         },
@@ -74,7 +76,8 @@
                 }
               },
               "queryRef": "Sum(radar_horario.precipitation_probability)",
-              "nativeQueryRef": "Soma de precipitation_probability"
+              "nativeQueryRef": "Prob. de Chuva (%)",
+              "displayName": "Prob. de Chuva (%)"
             }
           ]
         }
@@ -89,7 +92,7 @@
                     "Entity": "radar_horario"
                   }
                 },
-                "Property": "time_local"
+                "Property": "hora"
               }
             },
             "direction": "Ascending"
@@ -97,6 +100,143 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "lineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dashed'"
+                }
+              }
+            },
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "markerSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(radar_horario.precipitation_probability)"
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "secShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "secLabelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "background": [
@@ -137,6 +277,26 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Precipitação por Hora'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

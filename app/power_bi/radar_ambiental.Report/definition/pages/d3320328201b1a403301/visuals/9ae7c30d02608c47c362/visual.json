@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "radar_resumo_diario"
+                          "Entity": "radar_diario"
                         }
                       },
                       "Property": "media_ozonio"
@@ -46,7 +46,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "radar_resumo_diario"
+                        "Entity": "radar_diario"
                       }
                     },
                     "Property": "media_ozonio"
