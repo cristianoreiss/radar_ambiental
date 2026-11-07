@@ -4,6 +4,13 @@ Pipeline de engenharia de dados que coleta, de hora em hora, a **previsão do te
 
 > Projeto de portfólio. Os dados são de previsão (modelos numéricos), não de estações de medição.
 
+## Dashboard
+
+Acesse o painel interativo desenvolvido no Power BI:
+
+[**Visualizar Dashboard — Radar Ambiental**](https://app.powerbi.com/view?r=eyJrIjoiNjdmMmE5NjgtZDIzOC00MjQxLWE2YjgtODI4YTM2ODYxOTc4IiwidCI6ImEwYzg4MDlhLWI3NmMtNGIzMy1iNGMyLTZhY2E0MzFmYWQ1ZSJ9)
+
+
 ## Objetivo
 
 Responder, para cada capital:
