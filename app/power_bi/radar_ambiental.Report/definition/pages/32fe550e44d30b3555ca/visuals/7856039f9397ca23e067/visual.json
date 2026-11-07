@@ -154,7 +154,7 @@
             "markerSize": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "5D"
                 }
               }
             }
