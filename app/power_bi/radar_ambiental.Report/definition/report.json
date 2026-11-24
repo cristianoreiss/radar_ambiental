@@ -31,7 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -63,6 +63,11 @@
         {
           "name": "Untitled_(7)7199319856838652.png",
           "path": "Untitled_(7)7199319856838652.png",
+          "type": "Image"
+        },
+        {
+          "name": "Untitled_(8)8753622366337086.png",
+          "path": "Untitled_(8)8753622366337086.png",
           "type": "Image"
         }
       ]

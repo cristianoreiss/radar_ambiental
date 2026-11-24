@@ -4,10 +4,10 @@
   "position": {
     "x": 261,
     "y": 810,
-    "z": 6000,
+    "z": 10000,
     "height": 217,
     "width": 1319,
-    "tabOrder": 6000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "scatterChart",
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_capitais"
+                      "Entity": "radar_diario"
                     }
                   },
-                  "Property": "name"
+                  "Property": "capital"
                 }
               },
-              "queryRef": "dim_capitais.name",
+              "queryRef": "radar_diario.capital",
               "nativeQueryRef": "Capital",
               "active": true,
               "displayName": "Capital"

@@ -26,3 +26,12 @@ relationship AutoDetected_50fb4396-bba5-4bae-a94d-09b44737d38c
 	fromColumn: radar_diario.uf
 	toColumn: dim_capitais.uf
 
+relationship a00281c9-07d3-42e5-a14c-a240d8044e94
+	joinOnDateBehavior: datePartOnly
+	fromColumn: alerta_qualidade_ar.date
+	toColumn: LocalDateTable_54509a23-02ca-4dd0-a5ec-dafbbd6d9abd.Date
+
+relationship AutoDetected_11f0f2ae-5458-4e4d-a71e-a4e662b7d7e7
+	fromColumn: alerta_qualidade_ar.uf
+	toColumn: dim_capitais.uf
+

@@ -241,6 +241,32 @@ table radar_diario
 
 		annotation SummarizationSetBy = Automatic
 
+	column capital
+		dataType: string
+		lineageTag: ce7ae078-b3b8-460a-8ae3-774c061ef411
+		summarizeBy: none
+		sourceColumn: capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao
+		dataType: string
+		lineageTag: 4c03357d-d5cd-4947-acb5-5647999dbbc5
+		summarizeBy: none
+		sourceColumn: regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_media_movel_8h_ozonio
+		dataType: double
+		lineageTag: b6330619-b05c-4321-a54d-5ca3395dfa15
+		summarizeBy: sum
+		sourceColumn: max_media_movel_8h_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition radar_diario = m
 		mode: import
 		source =

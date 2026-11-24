@@ -36,6 +36,10 @@ def preparar_dim_capitais(
 
     dataframe_capitais = pl.read_json(caminho_locations)
 
+    dataframe_capitais = dataframe_capitais.rename({
+        "name": "capital"
+    })
+
     dataframe_capitais = dataframe_capitais.with_columns(
         pl.when(pl.col("uf").is_in(["RJ", "SP", "ES", "MG"]))
         .then(pl.lit("Sudeste"))

@@ -48,11 +48,11 @@
                       "Property": "temperature_2m"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(radar_horario.temperature_2m)",
-              "nativeQueryRef": "Temperatura (ºC)",
+              "nativeQueryRef": "Média de temperature_2m",
               "displayName": "Temperatura (ºC)"
             },
             {
@@ -68,11 +68,11 @@
                       "Property": "relative_humidity_2m"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(radar_horario.relative_humidity_2m)",
-              "nativeQueryRef": "Umidade (%)",
+              "nativeQueryRef": "Média de relative_humidity_2m",
               "displayName": "Umidade (%)"
             },
             {
@@ -88,11 +88,11 @@
                       "Property": "pm2_5"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(radar_horario.pm2_5)",
-              "nativeQueryRef": "PM2.5 (µg/m³)",
+              "nativeQueryRef": "Média de pm2_5",
               "displayName": "PM2.5 (µg/m³)"
             },
             {
@@ -108,11 +108,11 @@
                       "Property": "pm10"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(radar_horario.pm10)",
-              "nativeQueryRef": "PM10 (µg/m³)",
+              "nativeQueryRef": "Média de pm10",
               "displayName": "PM10 (µg/m³)"
             },
             {
@@ -128,11 +128,11 @@
                       "Property": "ozone"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(radar_horario.ozone)",
-              "nativeQueryRef": "Ozônio (µg/m³)",
+              "nativeQueryRef": "Média de ozone",
               "displayName": "Ozônio (µg/m³)"
             }
           ]

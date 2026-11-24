@@ -1,0 +1,228 @@
+table alerta_qualidade_ar
+	lineageTag: b67ebc3a-90ad-4197-9b13-c72076586e7d
+
+	measure 'Média PM2.5' = AVERAGE(alerta_qualidade_ar[media_pm2_5])
+		formatString: 0.0
+		lineageTag: 3afcf204-aa00-40e1-a008-ce12ebc92abf
+
+	measure 'Média PM10' = AVERAGE(alerta_qualidade_ar[media_pm10])
+		formatString: 0.0
+		lineageTag: 5bfd3ad0-9346-4cd4-a928-1e87aee06080
+
+	measure 'Máxima média móvel 8h Ozônio' = MAX(alerta_qualidade_ar[max_media_movel_8h_ozonio])
+		formatString: 0.0
+		lineageTag: 8b636191-bb67-456f-a634-cd4af3e9333c
+
+	measure 'Situação PM2.5' =
+			VAR h = SUM(alerta_qualidade_ar[horas_com_pm2_5])
+			VAR v = [Média PM2.5]
+			RETURN SWITCH(TRUE(), ISBLANK(v) || h = 0, "Sem dados", h < 24, "Dados incompletos", v > 50, "Acima do PI-2", "Dentro do PI-2")
+		formatString: @
+		lineageTag: a14cd035-334c-431b-834b-fee95ce8e530
+
+	measure 'Situação PM10' =
+			VAR h = SUM(alerta_qualidade_ar[horas_com_pm10])
+			VAR v = [Média PM10]
+			RETURN SWITCH(TRUE(), ISBLANK(v) || h = 0, "Sem dados", h < 24, "Dados incompletos", v > 100, "Acima do PI-2", "Dentro do PI-2")
+		formatString: @
+		lineageTag: 59b0189c-c0dd-4aa3-af77-50ba5316c018
+
+	measure 'Situação Ozônio' =
+			VAR h = SUM(alerta_qualidade_ar[horas_com_ozonio])
+			VAR v = [Máxima média móvel 8h Ozônio]
+			RETURN SWITCH(TRUE(), ISBLANK(v) || h < 8, IF(h = 0, "Sem dados", "Dados incompletos"), v > 130, "Acima do PI-2", "Dentro do PI-2")
+		formatString: @
+		lineageTag: 5c92af70-4c9f-4f32-b5d1-89c691657f6e
+
+	measure 'Situação Geral' =
+			VAR s25 = [Situação PM2.5]
+			VAR s10 = [Situação PM10]
+			VAR so3 = [Situação Ozônio]
+			RETURN SWITCH(TRUE(), s25 = "Acima do PI-2" || s10 = "Acima do PI-2" || so3 = "Acima do PI-2", "Acima do PI-2", s25 = "Sem dados" && s10 = "Sem dados" && so3 = "Sem dados", "Sem dados", s25 = "Dados incompletos" || s10 = "Dados incompletos" || so3 = "Dados incompletos" || s25 = "Sem dados" || s10 = "Sem dados" || so3 = "Sem dados", "Dados incompletos", "Dentro do PI-2")
+		formatString: @
+		lineageTag: 890ea000-72dd-481c-92c1-91c8a252f39f
+
+	measure 'Alertas PM2.5' = CALCULATE(COUNTROWS(alerta_qualidade_ar), KEEPFILTERS(alerta_qualidade_ar[status_pm2_5] = "Acima do PI-2"))
+		formatString: 0
+		lineageTag: 7d6717c3-667f-41ac-b3c8-4d7fa5f2811d
+
+	measure 'Alertas PM10' = CALCULATE(COUNTROWS(alerta_qualidade_ar), KEEPFILTERS(alerta_qualidade_ar[status_pm10] = "Acima do PI-2"))
+		formatString: 0
+		lineageTag: 3715f9a6-5e10-4e3a-931d-22736c7016e6
+
+	measure 'Alertas Ozônio' = CALCULATE(COUNTROWS(alerta_qualidade_ar), KEEPFILTERS(alerta_qualidade_ar[status_ozonio] = "Acima do PI-2"))
+		formatString: 0
+		lineageTag: da7d1548-7030-4405-9e0b-d4c1168ac517
+
+	measure 'Alertas registrados' = SWITCH(TRUE(), SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM2.5", [Alertas PM2.5], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM10", [Alertas PM10], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "Ozônio", [Alertas Ozônio], [Alertas PM2.5] + [Alertas PM10] + [Alertas Ozônio])
+		formatString: 0
+		lineageTag: bdf54f05-1e2d-4e14-a561-4dd85738401f
+
+	measure 'Capitais em alerta' =
+			VAR pol = SELECTEDVALUE('Filtro Poluente'[Poluente])
+			VAR filteredTable = FILTER(alerta_qualidade_ar, SWITCH(TRUE(), pol = "PM2.5", alerta_qualidade_ar[status_pm2_5] = "Acima do PI-2", pol = "PM10", alerta_qualidade_ar[status_pm10] = "Acima do PI-2", pol = "Ozônio", alerta_qualidade_ar[status_ozonio] = "Acima do PI-2", alerta_qualidade_ar[status_geral] = "Acima do PI-2"))
+			RETURN CALCULATE(DISTINCTCOUNT(alerta_qualidade_ar[capital]), KEEPFILTERS(filteredTable))
+		formatString: 0
+		lineageTag: 998995c5-0836-4b9d-8326-1cd520e1696c
+
+	measure 'Poluente predominante' =
+			VAR p25 = [Alertas PM2.5]
+			VAR p10 = [Alertas PM10]
+			VAR oz3 = [Alertas Ozônio]
+			RETURN SWITCH(TRUE(), p25 >= p10 && p25 >= oz3, "PM2.5", p10 >= p25 && p10 >= oz3, "PM10", oz3 >= p25 && oz3 >= p10, "Ozônio", "Nenhum")
+		formatString: @
+		lineageTag: 5765512e-d72f-489b-9296-fe42a6dbeb21
+
+	measure 'Ocorrências selecionadas' = [Alertas registrados]
+		formatString: 0
+		lineageTag: b08c5206-83d1-490f-9264-dae2448937a6
+
+	measure 'Situação selecionada' = SWITCH(TRUE(), SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM2.5", [Situação PM2.5], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM10", [Situação PM10], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "Ozônio", [Situação Ozônio], [Situação Geral])
+		formatString: @
+		lineageTag: b2c1a994-ecb6-48fa-b91a-a58459efd4b7
+
+	measure 'Alertas por data' = SWITCH(TRUE(), SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM2.5", [Alertas PM2.5], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "PM10", [Alertas PM10], SELECTEDVALUE('Filtro Poluente'[Poluente]) = "Ozônio", [Alertas Ozônio], [Alertas registrados])
+		formatString: 0
+		lineageTag: 24e339dc-fa2a-4bd7-b932-474f0e419467
+
+	column uf
+		dataType: string
+		lineageTag: e73a34e2-1e8c-4578-a661-bbb3e7e94453
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column capital
+		dataType: string
+		lineageTag: 4f5460a4-9a17-4bda-8043-ecd460bb009b
+		summarizeBy: none
+		sourceColumn: capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao
+		dataType: string
+		lineageTag: a3b0e998-a20a-4fed-a4d4-46ddd99428b9
+		summarizeBy: none
+		sourceColumn: regiao
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ec081f4f-5ad6-4401-b7c4-8a9594dfbbca
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: a00281c9-07d3-42e5-a14c-a240d8044e94
+			defaultHierarchy: LocalDateTable_54509a23-02ca-4dd0-a5ec-dafbbd6d9abd.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column media_pm2_5
+		dataType: double
+		lineageTag: a671d152-4c1a-4233-b93e-5ef8188ede24
+		summarizeBy: sum
+		sourceColumn: media_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column media_pm10
+		dataType: double
+		lineageTag: 8dc2585f-2ccb-42b5-9b0a-e57211d9c0c9
+		summarizeBy: sum
+		sourceColumn: media_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column max_media_movel_8h_ozonio
+		dataType: double
+		lineageTag: cd6d7db8-c30b-4f6e-9474-8658a7a0a201
+		summarizeBy: sum
+		sourceColumn: max_media_movel_8h_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_com_pm2_5
+		dataType: int64
+		formatString: 0
+		lineageTag: f9279252-bd24-498b-8593-c475fc04ab9c
+		summarizeBy: sum
+		sourceColumn: horas_com_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column horas_com_pm10
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d7e53c7-a7a8-419a-82f8-6d8db30bd921
+		summarizeBy: sum
+		sourceColumn: horas_com_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+	column horas_com_ozonio
+		dataType: int64
+		formatString: 0
+		lineageTag: d9bd6626-225e-4a57-907c-09e643831168
+		summarizeBy: sum
+		sourceColumn: horas_com_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_pm2_5
+		dataType: string
+		lineageTag: 685b28d2-c10f-4fd6-bca0-710df8929d17
+		summarizeBy: none
+		sourceColumn: status_pm2_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_pm10
+		dataType: string
+		lineageTag: 9c32a13d-133b-454b-a5aa-2908d19bff74
+		summarizeBy: none
+		sourceColumn: status_pm10
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_ozonio
+		dataType: string
+		lineageTag: eda9521b-308b-487d-8530-dec389dd7e34
+		summarizeBy: none
+		sourceColumn: status_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_geral
+		dataType: string
+		lineageTag: 02731e3f-a851-4717-a726-7cf53cc0bb5a
+		summarizeBy: none
+		sourceColumn: status_geral
+
+		annotation SummarizationSetBy = Automatic
+
+	partition alerta_qualidade_ar = m
+		mode: import
+		source =
+				let
+				    Fonte = Parquet.Document(File.Contents("C:\Users\crist\Documents\Projetos\radar_ambiental\data\gold\gold_alertas_qualidade_ar.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Fonte
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

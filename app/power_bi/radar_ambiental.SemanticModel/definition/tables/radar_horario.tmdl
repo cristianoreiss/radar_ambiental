@@ -90,14 +90,6 @@ table radar_horario
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column name
-		dataType: string
-		lineageTag: 45b6ed47-4b01-4f88-bdad-c1d0ffa08bdc
-		summarizeBy: none
-		sourceColumn: name
-
-		annotation SummarizationSetBy = Automatic
-
 	column latitude
 		dataType: double
 		lineageTag: 3e839bf1-9f62-4df0-88a4-89b7c8bf84fe
@@ -180,6 +172,42 @@ table radar_horario
 		lineageTag: af231988-b380-41c0-9760-f079dec70c0a
 		summarizeBy: none
 		sourceColumn: uf_capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column capital
+		dataType: string
+		lineageTag: 5ae7bedb-8c3f-4f81-aed2-8196e9a98816
+		summarizeBy: none
+		sourceColumn: capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column intervalo_horario_valido
+		dataType: int64
+		formatString: 0
+		lineageTag: f7f1114b-fb2e-44e3-8c2f-d3192e31986d
+		summarizeBy: sum
+		sourceColumn: intervalo_horario_valido
+
+		annotation SummarizationSetBy = Automatic
+
+	column media_movel_8h_ozonio
+		dataType: double
+		lineageTag: c1c4992a-7c9f-49c9-bbb0-abd61ad3f93c
+		summarizeBy: sum
+		sourceColumn: media_movel_8h_ozonio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column intervalos_consecutivos
+		dataType: int64
+		formatString: 0
+		lineageTag: 64a0a63a-17d8-4d90-8994-ab586f3e3832
+		summarizeBy: sum
+		sourceColumn: intervalos_consecutivos
 
 		annotation SummarizationSetBy = Automatic
 

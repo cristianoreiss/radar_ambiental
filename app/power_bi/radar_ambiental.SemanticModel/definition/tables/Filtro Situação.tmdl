@@ -1,0 +1,12 @@
+table 'Filtro Situação'
+	lineageTag: fcb9a63f-f973-4655-b44c-b32f700e9191
+
+	column Situação
+		lineageTag: 43d5f5e3-d0d3-4a95-a15f-37952fabca9f
+		isNameInferred
+		sourceColumn: [Situação]
+
+	partition 'Filtro Situação' = calculated
+		mode: import
+		source = DATATABLE("Situação", STRING, {{"Acima do PI-2"}, {"Dentro do PI-2"}, {"Dados incompletos"}, {"Sem dados"}})
+

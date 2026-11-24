@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["dim_capitais","radar_horario","radar_diario"]
+annotation PBI_QueryOrder = ["dim_capitais","radar_horario","radar_diario","alerta_qualidade_ar"]
 
 ref table dim_capitais
 ref table radar_horario
@@ -21,6 +21,10 @@ ref table LocalDateTable_d5bed029-2b17-4643-a9b6-1f7c8803da3b
 ref table LocalDateTable_873fd9b7-abb3-4294-9b1d-797316ece5c9
 ref table radar_diario
 ref table LocalDateTable_378cb34b-8928-45c7-99fa-7368d0ac4908
+ref table alerta_qualidade_ar
+ref table LocalDateTable_54509a23-02ca-4dd0-a5ec-dafbbd6d9abd
+ref table 'Filtro Poluente'
+ref table 'Filtro Situação'
 
 ref cultureInfo pt-BR
 

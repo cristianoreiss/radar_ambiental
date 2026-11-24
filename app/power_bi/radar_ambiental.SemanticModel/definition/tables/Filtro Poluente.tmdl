@@ -1,0 +1,12 @@
+table 'Filtro Poluente'
+	lineageTag: 6bb72e44-4a83-4d86-a872-9cd7a7fa9061
+
+	column Poluente
+		lineageTag: 1f4d414a-a69e-4e72-b487-f36c2b4adf90
+		isNameInferred
+		sourceColumn: [Poluente]
+
+	partition 'Filtro Poluente' = calculated
+		mode: import
+		source = DATATABLE("Poluente", STRING, {{"PM2.5"}, {"PM10"}, {"Ozônio"}})
+

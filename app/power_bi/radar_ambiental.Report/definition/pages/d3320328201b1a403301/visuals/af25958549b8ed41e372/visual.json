@@ -4,10 +4,10 @@
   "position": {
     "x": 686,
     "y": 114,
-    "z": 6003,
+    "z": 13000,
     "height": 66,
     "width": 897,
-    "tabOrder": 6003
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "slicer",
@@ -128,7 +128,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "datetime'2026-11-09T00:00:00'"
+                                "Value": "datetime'2026-11-23T00:00:00'"
                               }
                             }
                           ]

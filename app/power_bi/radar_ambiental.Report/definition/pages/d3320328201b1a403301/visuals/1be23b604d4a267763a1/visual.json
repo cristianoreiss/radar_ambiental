@@ -4,10 +4,10 @@
   "position": {
     "x": 261,
     "y": 578,
-    "z": 4000,
+    "z": 8000,
     "height": 216,
     "width": 650,
-    "tabOrder": 4000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_capitais"
+                      "Entity": "radar_diario"
                     }
                   },
-                  "Property": "name"
+                  "Property": "capital"
                 }
               },
-              "queryRef": "dim_capitais.name",
+              "queryRef": "radar_diario.capital",
               "nativeQueryRef": "Capital",
               "active": true,
               "displayName": "Capital"
@@ -87,6 +87,18 @@
               "expr": {
                 "Literal": {
                   "Value": "1L"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

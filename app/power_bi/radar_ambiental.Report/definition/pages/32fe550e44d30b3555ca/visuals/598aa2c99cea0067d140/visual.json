@@ -221,23 +221,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0951623d1463500340da",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "radar_horario"
-              }
-            },
-            "Property": "hora"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

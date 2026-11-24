@@ -47,10 +47,9 @@
                 "Property": "date"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {
@@ -107,7 +106,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "datetime'2026-11-07T00:00:00'"
+                                "Value": "datetime'2026-11-28T00:00:00'"
                               }
                             }
                           ]

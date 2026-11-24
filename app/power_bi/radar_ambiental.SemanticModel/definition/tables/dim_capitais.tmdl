@@ -1,14 +1,6 @@
 table dim_capitais
 	lineageTag: 9a4ee524-0995-4b0e-b74a-fb7abae80052
 
-	column name
-		dataType: string
-		lineageTag: 414bff9d-0ada-4540-b36f-63cadddc0af2
-		summarizeBy: none
-		sourceColumn: name
-
-		annotation SummarizationSetBy = Automatic
-
 	column uf
 		dataType: string
 		lineageTag: bb80216c-5cdc-4c56-ac0c-f5e8f0510036
@@ -53,9 +45,17 @@ table dim_capitais
 
 		annotation SummarizationSetBy = Automatic
 
-	column uf_capital = dim_capitais[uf] & " - " & dim_capitais[name]
+	column uf_capital = dim_capitais[uf] & " - " & dim_capitais[capital]
 		lineageTag: 3901e97e-9c3a-4a8d-af3f-ca2d212d26ce
 		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column capital
+		dataType: string
+		lineageTag: 3b8bffc3-7ab1-4f60-8abe-d63524d8968c
+		summarizeBy: none
+		sourceColumn: capital
 
 		annotation SummarizationSetBy = Automatic
 

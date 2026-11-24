@@ -46,63 +46,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "dim_capitais.name": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "dim_capitais",
-			          "ConceptualProperty": "name"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "Capital": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
 			    "dim_capitais.uf": {
 			      "Definition": {
 			        "Binding": {
@@ -1078,52 +1021,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "radar_horario.name": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "radar_horario",
-			          "ConceptualProperty": "name"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
 			    "radar_horario.latitude": {
 			      "Definition": {
 			        "Binding": {
@@ -1284,16 +1181,6 @@ cultureInfo pt-BR
 			        {
 			          "regiao": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Região": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2229,16 +2116,6 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.461
-			          }
-			        },
-			        {
-			          "Capital": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3505,9 +3382,2414 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "dim_capitais.capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.intervalo_horario_valido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "intervalo_horario_valido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "intervalo horario valido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "intervalo_horario_valido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.media_movel_8h_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "media_movel_8h_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media movel 8h ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_movel_8h_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_horario.intervalos_consecutivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_horario",
+			          "ConceptualProperty": "intervalos_consecutivos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "intervalos consecutivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "intervalo consecutivo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "intervalos_consecutivos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regiao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.max_media_movel_8h_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "max_media_movel_8h_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max media movel 8h ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_media_movel_8h_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum media movel 8h ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alerta qualidade ar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alerta_qualidade_ar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.uf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "uf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "uf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.regiao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "regiao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regiao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Região": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Período": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Data": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "alerta_qualidade_ar.date.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.date.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.date.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.date.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.media_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "media_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.media_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "media_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "media_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.max_media_movel_8h_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "max_media_movel_8h_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max media movel 8h ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_media_movel_8h_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum media movel 8h ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.horas_com_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "horas_com_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.horas_com_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "horas_com_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com pm 10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.horas_com_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "horas_com_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas com ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora com ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "horas_com_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.status_pm_2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "status_pm2_5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status pm 2 5": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status_pm2_5": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "importance pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "prestige pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "prominence pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "condition pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "class pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "grade pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "level pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "position pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "rank pm 2 5": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Situação PM2.5": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.status_pm_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "status_pm10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status pm 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status_pm10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "importance pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prestige pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prominence pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "condition pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "class pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "grade pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "level pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "position pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "rank pm 10": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Situação PM10": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.status_ozonio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "status_ozonio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status ozonio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status_ozonio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "importance ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prestige ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prominence ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "condition ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "grade ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "level ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "position ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "rank ozonio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Situação Ozônio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.status_geral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "status_geral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status geral": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "status_geral": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "importance geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prestige geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prominence geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "condition geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "grade geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "level geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "position geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "rank geral": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Situação do alerta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Situação geral": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.alertas_PM2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Alertas PM2.5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas PM2.5": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.alertas_PM10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Alertas PM10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas PM10": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.alertas_ozônio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Alertas Ozônio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas ozônio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.alertas_registrados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Alertas registrados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas registrados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.capitais_em_alerta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Capitais em alerta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "capitais em alerta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.poluente_predominante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Poluente predominante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poluente predominante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.média_PM2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Média PM2.5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média PM2.5": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.média_PM10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Média PM10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "média PM10": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.máxima_média_móvel_8h_ozônio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Máxima média móvel 8h Ozônio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "máxima média móvel 8h ozônio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Máx. média móvel 8h Ozônio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "filtro_poluente.poluente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Filtro Poluente",
+			          "ConceptualProperty": "Poluente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poluente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.ocorrências_selecionadas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Ocorrências selecionadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ocorrências selecionadas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ocorrências": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.situação_PM2_5": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Situação PM2.5"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação PM2.5": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.situação_PM10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Situação PM10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação PM10": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.situação_ozônio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Situação Ozônio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação ozônio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.situação_geral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Situação Geral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação geral": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.situação_selecionada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Situação selecionada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação selecionada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar.alertas_por_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "alerta_qualidade_ar",
+			          "ConceptualProperty": "Alertas por data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas por data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alerta por information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alerta por fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alerta por info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alerta por statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "alerta por document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "alerta por figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "alerta por record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "filtro_poluente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Filtro Poluente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filtro poluente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "filtro_situação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Filtro Situação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filtro situação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "filtro_situação.situação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Filtro Situação",
+			          "ConceptualProperty": "Situação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situação": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "alerta_qualidade_ar_date_mê_has_alerta_qualidade_ar_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.mê": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.mê"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.dia": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.dia"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê4"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_trimestre_has_alerta_qualidade_ar_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.trimestre": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.trimestre"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.mê": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres4"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_ano_has_alerta_qualidade_ar_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.ano": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.ano"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.trimestre": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.ano"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos4"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_hierarquia_de_data_has_alerta_qualidade_ar_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.hierarquia_de_data"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.dia": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_hierarquia_de_data_has_alerta_qualidade_ar_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.hierarquia_de_data"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.mê": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_hierarquia_de_data_has_alerta_qualidade_ar_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.hierarquia_de_data"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.trimestre": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_hierarquia_de_data_has_alerta_qualidade_ar_date_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.hierarquia_de_data"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.ano": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_date_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar.date": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date"
+			          }
+			        },
+			        "alerta_qualidade_ar.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar.date"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "radar_diario_date_mê_has_radar_diario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario.date.mê": {
+			          "Target": {
+			            "Entity": "radar_diario.date.mê"
+			          }
+			        },
+			        "radar_diario.date.dia": {
+			          "Target": {
+			            "Entity": "radar_diario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario.date.dia"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "radar_diario.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "radar_diario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    },
 			    "radar_diario_date_trimestre_has_radar_diario_date_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "radar_diario"
@@ -3537,7 +5819,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
+			          "ID": "trimestres_have_mê1"
 			        },
 			        {
 			          "Attribute": {
@@ -3550,7 +5832,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
+			          "ID": "mê_have_trimestres1"
 			        },
 			        {
 			          "Preposition": {
@@ -3603,7 +5885,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -3616,7 +5898,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -3669,7 +5951,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -3702,7 +5984,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -3735,7 +6017,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -3768,7 +6050,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -3801,7 +6083,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_hierarquia_de_data"
+			          "ID": "dates_have_hierarquia_de_data1"
 			        }
 			      ]
 			    },
@@ -3834,7 +6116,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
+			          "ID": "mê_have_dias2"
 			        },
 			        {
 			          "Attribute": {
@@ -3847,7 +6129,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
+			          "ID": "dias_have_mê2"
 			        },
 			        {
 			          "Preposition": {
@@ -3900,7 +6182,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê1"
+			          "ID": "trimestres_have_mê2"
 			        },
 			        {
 			          "Attribute": {
@@ -3913,7 +6195,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres1"
+			          "ID": "mê_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -3966,7 +6248,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
+			          "ID": "anos_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -3979,7 +6261,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
+			          "ID": "trimestres_have_anos2"
 			        },
 			        {
 			          "Preposition": {
@@ -4032,7 +6314,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
+			          "ID": "hierarquia_de_data_have_dias2"
 			        }
 			      ]
 			    },
@@ -4065,7 +6347,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
+			          "ID": "hierarquia_de_data_have_mê2"
 			        }
 			      ]
 			    },
@@ -4098,7 +6380,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
+			          "ID": "hierarquia_de_data_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -4131,7 +6413,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
+			          "ID": "hierarquia_de_data_have_anos2"
 			        }
 			      ]
 			    },
@@ -4164,7 +6446,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_hierarquia_de_data1"
+			          "ID": "dates_have_hierarquia_de_data2"
 			        }
 			      ]
 			    },
@@ -4197,7 +6479,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias1"
+			          "ID": "mê_have_dias3"
 			        },
 			        {
 			          "Attribute": {
@@ -4210,7 +6492,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê1"
+			          "ID": "dias_have_mê3"
 			        },
 			        {
 			          "Preposition": {
@@ -4263,7 +6545,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê2"
+			          "ID": "trimestres_have_mê3"
 			        },
 			        {
 			          "Attribute": {
@@ -4276,7 +6558,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres2"
+			          "ID": "mê_have_trimestres3"
 			        },
 			        {
 			          "Preposition": {
@@ -4329,7 +6611,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres2"
+			          "ID": "anos_have_trimestres3"
 			        },
 			        {
 			          "Attribute": {
@@ -4342,7 +6624,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos2"
+			          "ID": "trimestres_have_anos3"
 			        },
 			        {
 			          "Preposition": {
@@ -4395,7 +6677,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias2"
+			          "ID": "hierarquia_de_data_have_dias3"
 			        }
 			      ]
 			    },
@@ -4428,7 +6710,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê2"
+			          "ID": "hierarquia_de_data_have_mê3"
 			        }
 			      ]
 			    },
@@ -4461,7 +6743,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres2"
+			          "ID": "hierarquia_de_data_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -4494,7 +6776,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos2"
+			          "ID": "hierarquia_de_data_have_anos3"
 			        }
 			      ]
 			    },
@@ -4560,7 +6842,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_dias2"
+			          "ID": "mê_have_dias4"
 			        },
 			        {
 			          "Attribute": {
@@ -4573,7 +6855,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dias_have_mê2"
+			          "ID": "dias_have_mê4"
 			        },
 			        {
 			          "Preposition": {
@@ -4626,7 +6908,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê3"
+			          "ID": "trimestres_have_mê4"
 			        },
 			        {
 			          "Attribute": {
@@ -4639,7 +6921,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres3"
+			          "ID": "mê_have_trimestres4"
 			        },
 			        {
 			          "Preposition": {
@@ -4692,7 +6974,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres3"
+			          "ID": "anos_have_trimestres4"
 			        },
 			        {
 			          "Attribute": {
@@ -4705,7 +6987,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos3"
+			          "ID": "trimestres_have_anos4"
 			        },
 			        {
 			          "Preposition": {
@@ -4758,7 +7040,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias3"
+			          "ID": "hierarquia_de_data_have_dias4"
 			        }
 			      ]
 			    },
@@ -4791,7 +7073,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê3"
+			          "ID": "hierarquia_de_data_have_mê4"
 			        }
 			      ]
 			    },
@@ -4824,7 +7106,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres3"
+			          "ID": "hierarquia_de_data_have_trimestres4"
 			        }
 			      ]
 			    },
@@ -4857,7 +7139,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos3"
+			          "ID": "hierarquia_de_data_have_anos4"
 			        }
 			      ]
 			    },
@@ -4891,6 +7173,52 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "times_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_dim_capitais": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_dim_capitaises"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_alerta_qualidade_ar"
 			        }
 			      ]
 			    },
@@ -4983,6 +7311,1425 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_capitaises_have_radar_horarios"
+			        }
+			      ]
+			    },
+			    "filtro_situação_has_situação": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Situação"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_situação": {
+			          "Target": {
+			            "Entity": "filtro_situação"
+			          }
+			        },
+			        "filtro_situação.situação": {
+			          "Target": {
+			            "Entity": "filtro_situação.situação"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_situação"
+			            },
+			            "Object": {
+			              "Role": "filtro_situação.situação"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_situaçãos_have_situaçãos"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_alertas_por_data": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_por_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_por_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_por_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_alertas_por_data"
+			        }
+			      ]
+			    },
+			    "filtro_poluente_has_alerta_qualidade_ar_alertas_por_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Poluente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_por_data": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_por_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_poluente"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_por_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_poluentes_have_alertas_por_data"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_situação_selecionada": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_selecionada": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_selecionada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_selecionada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_situação_selecionada"
+			        }
+			      ]
+			    },
+			    "filtro_poluente_has_alerta_qualidade_ar_situação_selecionada": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Poluente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_selecionada": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_selecionada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_poluente"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_selecionada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_poluentes_have_situação_selecionada"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_situação_geral": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_geral": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_geral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_geral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_situação_geral"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_situação_ozônio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_ozônio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_ozônio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_ozônio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_situação_ozônio"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_situação_PM10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_PM10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_PM10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_PM10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_situação_PM10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_situação_PM2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.situação_PM2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.situação_PM2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.situação_PM2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_situação_PM2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_ocorrências_selecionadas": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.ocorrências_selecionadas": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.ocorrências_selecionadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.ocorrências_selecionadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_ocorrências_selecionadas"
+			        }
+			      ]
+			    },
+			    "filtro_poluente_has_alerta_qualidade_ar_ocorrências_selecionadas": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Poluente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente"
+			          }
+			        },
+			        "alerta_qualidade_ar.ocorrências_selecionadas": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.ocorrências_selecionadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_poluente"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.ocorrências_selecionadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_poluentes_have_ocorrências_selecionadas"
+			        }
+			      ]
+			    },
+			    "filtro_poluente_has_poluente": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Poluente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente"
+			          }
+			        },
+			        "filtro_poluente.poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente.poluente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_poluente"
+			            },
+			            "Object": {
+			              "Role": "filtro_poluente.poluente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_poluentes_have_poluentes"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_máxima_média_móvel_8h_ozônio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.máxima_média_móvel_8h_ozônio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.máxima_média_móvel_8h_ozônio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.máxima_média_móvel_8h_ozônio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_máxima_média_móvel_8h_ozônio"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_média_PM10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.média_PM10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.média_PM10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.média_PM10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_média_PM10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_média_PM2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.média_PM2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.média_PM2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.média_PM2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_média_PM2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_poluente_predominante": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.poluente_predominante": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.poluente_predominante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.poluente_predominante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_poluente_predominante"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_capitais_em_alerta": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.capitais_em_alerta": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.capitais_em_alerta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.capitais_em_alerta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_capitais_em_alerta"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_alertas_registrados": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_registrados": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_registrados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_registrados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_alertas_registrados"
+			        }
+			      ]
+			    },
+			    "filtro_poluente_has_alerta_qualidade_ar_alertas_registrados": {
+			      "Binding": {
+			        "ConceptualEntity": "Filtro Poluente"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "filtro_poluente": {
+			          "Target": {
+			            "Entity": "filtro_poluente"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_registrados": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_registrados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "filtro_poluente"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_registrados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "filtro_poluentes_have_alertas_registrados"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_alertas_ozônio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_ozônio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_ozônio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_ozônio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_alertas_ozônio"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_alertas_PM10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_PM10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_PM10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_PM10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_alertas_PM10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_alertas_PM2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.alertas_PM2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.alertas_PM2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.alertas_PM2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_alertas_PM2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_status_geral": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.status_geral": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.status_geral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.status_geral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_status_gerals"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_status_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.status_ozonio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.status_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.status_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_status_ozonios"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_status_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.status_pm_10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.status_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.status_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_status_pm_10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_status_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.status_pm_2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.status_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.status_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_status_pm_2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_horas_com_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.horas_com_ozonio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.horas_com_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.horas_com_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_horas_com_ozonios"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_horas_com_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.horas_com_pm_10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.horas_com_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.horas_com_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_horas_com_pm_10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_horas_com_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.horas_com_pm_2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.horas_com_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.horas_com_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_horas_com_pm_2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_max_media_movel_8h_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.max_media_movel_8h_ozonio": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.max_media_movel_8h_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.max_media_movel_8h_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_max_media_movel_8h_ozonios"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_media_pm_10": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.media_pm_10": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.media_pm_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.media_pm_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_media_pm_10"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_media_pm_2_5": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.media_pm_2_5": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.media_pm_2_5"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.media_pm_2_5"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_media_pm_2_5"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.date": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_dates"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_regiao": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.regiao": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.regiao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.regiao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_regiaos"
+			        }
+			      ]
+			    },
+			    "alerta_qualidade_ar_has_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "alerta_qualidade_ar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "alerta_qualidade_ar": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar"
+			          }
+			        },
+			        "alerta_qualidade_ar.capital": {
+			          "Target": {
+			            "Entity": "alerta_qualidade_ar.capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "alerta_qualidade_ar"
+			            },
+			            "Object": {
+			              "Role": "alerta_qualidade_ar.capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "alerta_qualidade_ar_have_capitals"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_max_media_movel_8h_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.max_media_movel_8h_ozonio": {
+			          "Target": {
+			            "Entity": "radar_diario.max_media_movel_8h_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.max_media_movel_8h_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_max_media_movel_8h_ozonios"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_regiao": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.regiao": {
+			          "Target": {
+			            "Entity": "radar_diario.regiao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.regiao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_regiaos"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.capital": {
+			          "Target": {
+			            "Entity": "radar_diario.capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_capitals"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_intervalos_consecutivo": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.intervalos_consecutivo": {
+			          "Target": {
+			            "Entity": "radar_horario.intervalos_consecutivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.intervalos_consecutivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_intervalos_consecutivos"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_media_movel_8h_ozonio": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.media_movel_8h_ozonio": {
+			          "Target": {
+			            "Entity": "radar_horario.media_movel_8h_ozonio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.media_movel_8h_ozonio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_media_movel_8h_ozonios"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_intervalo_horario_valido": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.intervalo_horario_valido": {
+			          "Target": {
+			            "Entity": "radar_horario.intervalo_horario_valido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.intervalo_horario_valido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_intervalo_horario_validos"
+			        }
+			      ]
+			    },
+			    "radar_horario_has_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_horario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_horario": {
+			          "Target": {
+			            "Entity": "radar_horario"
+			          }
+			        },
+			        "radar_horario.capital": {
+			          "Target": {
+			            "Entity": "radar_horario.capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_horario"
+			            },
+			            "Object": {
+			              "Role": "radar_horario.capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_horarios_have_capitals"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.capital": {
+			          "Target": {
+			            "Entity": "dim_capitais.capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_capitals"
 			        }
 			      ]
 			    },
@@ -6174,39 +9921,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "radar_horario_has_name": {
-			      "Binding": {
-			        "ConceptualEntity": "radar_horario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "radar_horario": {
-			          "Target": {
-			            "Entity": "radar_horario"
-			          }
-			        },
-			        "radar_horario.name": {
-			          "Target": {
-			            "Entity": "radar_horario.name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "radar_horario"
-			            },
-			            "Object": {
-			              "Role": "radar_horario.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "radar_horarios_have_names"
-			        }
-			      ]
-			    },
 			    "radar_horario_has_ozone": {
 			      "Binding": {
 			        "ConceptualEntity": "radar_horario"
@@ -6633,118 +10347,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_capitaises_have_ufs"
-			        }
-			      ]
-			    },
-			    "dim_capitais_has_name": {
-			      "Binding": {
-			        "ConceptualEntity": "dim_capitais"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_capitais": {
-			          "Target": {
-			            "Entity": "dim_capitais"
-			          }
-			        },
-			        "dim_capitais.name": {
-			          "Target": {
-			            "Entity": "dim_capitais.name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_capitais"
-			            },
-			            "Object": {
-			              "Role": "dim_capitais.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_capitaises_have_names"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "dim_capitais"
-			            },
-			            "Name": {
-			              "Role": "dim_capitais.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_dim_capitaises"
-			        }
-			      ]
-			    },
-			    "radar_diario_date_mê_has_radar_diario_date_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "radar_diario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "radar_diario.date.mê": {
-			          "Target": {
-			            "Entity": "radar_diario.date.mê"
-			          }
-			        },
-			        "radar_diario.date.dia": {
-			          "Target": {
-			            "Entity": "radar_diario.date.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "radar_diario.date.mê"
-			            },
-			            "Object": {
-			              "Role": "radar_diario.date.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias3"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "radar_diario.date.dia"
-			            },
-			            "Object": {
-			              "Role": "radar_diario.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê3"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "radar_diario.date.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "radar_diario.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê3"
 			        }
 			      ]
 			    }

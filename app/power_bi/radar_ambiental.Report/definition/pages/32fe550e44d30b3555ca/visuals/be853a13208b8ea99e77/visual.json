@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "radar_horario"
+                      "Entity": "dim_capitais"
                     }
                   },
                   "Property": "uf_capital"
                 }
               },
-              "queryRef": "radar_horario.uf_capital",
-              "nativeQueryRef": "Capital",
-              "active": true,
-              "displayName": "Capital"
+              "queryRef": "dim_capitais.uf_capital",
+              "nativeQueryRef": "uf_capital",
+              "active": true
             }
           ]
         }
@@ -67,8 +66,8 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "r",
-                    "Entity": "radar_horario",
+                    "Name": "d",
+                    "Entity": "dim_capitais",
                     "Type": 0
                   }
                 ],
@@ -81,7 +80,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "r"
+                                  "Source": "d"
                                 }
                               },
                               "Property": "uf_capital"
