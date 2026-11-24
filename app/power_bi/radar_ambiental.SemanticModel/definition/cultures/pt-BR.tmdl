@@ -89,6 +89,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Capital": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "NameType": "Name"
@@ -269,6 +279,16 @@ cultureInfo pt-BR
 			        {
 			          "regiao": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Região": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2278,6 +2298,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Data": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -3127,6 +3157,351 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.precipitação_acumulada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "Precipitação Acumulada (mm)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precipitação acumulada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precipitação acumulada (mm)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "millimeter",
+			        "mm"
+			      ]
+			    },
+			    "radar_diario.umidade_média": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "Umidade Média (%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "umidade média": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "umidade média (%)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Umidade (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "radar_diario.PM10_médio_µg_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "PM10 Médio (µg/m³)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PM10 médio (µg/m³)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PM10 médio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "PM10 médio (µg": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PM10 médio ( µ g m³ )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "m³)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PM10": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.temperatura_média_C": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "Temperatura Média (°C)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temperatura média (°C)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temperatura média": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Temperatura (°C)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.PM2_5_médio_µg_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "PM2.5 Médio (µg/m³)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PM2.5 médio (µg/m³)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PM2.5 médio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "PM2.5 médio (µg": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PM2 . 5 médio ( µ g m³ )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "m³)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PM2.5": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "radar_diario.ozônio_médio_µg_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "radar_diario",
+			          "ConceptualProperty": "Ozônio Médio (µg/m³)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ozônio médio (µg/m³)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ozônio médio": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ozônio médio (µg": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ozônio médio ( µ g m³ )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "m³)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Ozônio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_capitais.uf_capital": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_capitais",
+			          "ConceptualProperty": "uf_capital"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "uf capital": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "uf_capital": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "uf wealth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf investment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "uf principal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "uf hub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "uf center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "uf headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "Capital": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4608,6 +4983,237 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_capitaises_have_radar_horarios"
+			        }
+			      ]
+			    },
+			    "dim_capitais_has_uf_capital": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_capitais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_capitais": {
+			          "Target": {
+			            "Entity": "dim_capitais"
+			          }
+			        },
+			        "dim_capitais.uf_capital": {
+			          "Target": {
+			            "Entity": "dim_capitais.uf_capital"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_capitais"
+			            },
+			            "Object": {
+			              "Role": "dim_capitais.uf_capital"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_capitaises_have_uf_capitals"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_ozônio_médio_µg_m": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.ozônio_médio_µg_m": {
+			          "Target": {
+			            "Entity": "radar_diario.ozônio_médio_µg_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.ozônio_médio_µg_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_ozônio_médio_µg_m"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_PM2_5_médio_µg_m": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.PM2_5_médio_µg_m": {
+			          "Target": {
+			            "Entity": "radar_diario.PM2_5_médio_µg_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.PM2_5_médio_µg_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_PM2_5_médio_µg_m"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_temperatura_média_C": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.temperatura_média_C": {
+			          "Target": {
+			            "Entity": "radar_diario.temperatura_média_C"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.temperatura_média_C"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_temperatura_média_C"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_PM10_médio_µg_m": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.PM10_médio_µg_m": {
+			          "Target": {
+			            "Entity": "radar_diario.PM10_médio_µg_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.PM10_médio_µg_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_PM10_médio_µg_m"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_umidade_média": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.umidade_média": {
+			          "Target": {
+			            "Entity": "radar_diario.umidade_média"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.umidade_média"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_umidade_média"
+			        }
+			      ]
+			    },
+			    "radar_diario_has_precipitação_acumulada": {
+			      "Binding": {
+			        "ConceptualEntity": "radar_diario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "radar_diario": {
+			          "Target": {
+			            "Entity": "radar_diario"
+			          }
+			        },
+			        "radar_diario.precipitação_acumulada": {
+			          "Target": {
+			            "Entity": "radar_diario.precipitação_acumulada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "radar_diario"
+			            },
+			            "Object": {
+			              "Role": "radar_diario.precipitação_acumulada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "radar_diarios_have_precipitação_acumulada"
 			        }
 			      ]
 			    },

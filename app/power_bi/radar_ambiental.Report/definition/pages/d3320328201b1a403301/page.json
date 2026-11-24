@@ -2,25 +2,86 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "d3320328201b1a403301",
   "displayName": "Resumo Diário",
-  "displayOption": "FitToPage",
-  "height": 1024,
-  "width": 1440,
-  "visibility": "HiddenInViewMode",
-  "visualInteractions": [
-    {
-      "source": "16eaa7c1ee0078e6067b",
-      "target": "1358a277088e8d340d46",
-      "type": "NoFilter"
-    },
-    {
-      "source": "16eaa7c1ee0078e6067b",
-      "target": "1be23b604d4a267763a1",
-      "type": "NoFilter"
-    },
-    {
-      "source": "16eaa7c1ee0078e6067b",
-      "target": "3e9061ac6eae524e48bd",
-      "type": "NoFilter"
-    }
-  ]
+  "displayOption": "ActualSize",
+  "height": 1050,
+  "width": 1600,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "201L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Untitled (7).png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Untitled_(7)7199319856838652.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Normal'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
 }

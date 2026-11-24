@@ -53,6 +53,12 @@ table dim_capitais
 
 		annotation SummarizationSetBy = Automatic
 
+	column uf_capital = dim_capitais[uf] & " - " & dim_capitais[name]
+		lineageTag: 3901e97e-9c3a-4a8d-af3f-ca2d212d26ce
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dim_capitais = m
 		mode: import
 		source =

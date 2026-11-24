@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "1be23b604d4a267763a1",
   "position": {
-    "x": 42.772802653399665,
-    "y": 578.12271973466,
-    "z": 10000,
-    "height": 347.70149253731341,
-    "width": 386.33499170812604,
-    "tabOrder": 10000
+    "x": 261,
+    "y": 578,
+    "z": 4000,
+    "height": 216,
+    "width": 650,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "radar_diario"
+                      "Entity": "dim_capitais"
                     }
                   },
-                  "Property": "uf"
+                  "Property": "name"
                 }
               },
-              "queryRef": "radar_resumo_diario.uf",
-              "nativeQueryRef": "uf",
-              "active": true
+              "queryRef": "dim_capitais.name",
+              "nativeQueryRef": "Capital",
+              "active": true,
+              "displayName": "Capital"
             }
           ]
         },
@@ -36,22 +37,18 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "radar_diario"
-                        }
-                      },
-                      "Property": "max_temperatura"
+                    "SourceRef": {
+                      "Entity": "radar_diario"
                     }
                   },
-                  "Function": 0
+                  "Property": "PM2.5 Médio (µg/m³)"
                 }
               },
-              "queryRef": "Sum(radar_resumo_diario.max_temperatura)",
-              "nativeQueryRef": "Soma de max_temperatura"
+              "queryRef": "radar_diario.PM2.5 Médio (µg/m³)",
+              "nativeQueryRef": "PM2.5 médio",
+              "active": true
             }
           ]
         }
@@ -60,18 +57,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "radar_diario"
-                      }
-                    },
-                    "Property": "max_temperatura"
+                  "SourceRef": {
+                    "Entity": "radar_diario"
                   }
                 },
-                "Function": 0
+                "Property": "PM2.5 Médio (µg/m³)"
               }
             },
             "direction": "Descending"
@@ -95,6 +87,115 @@
               "expr": {
                 "Literal": {
                   "Value": "1L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E8F0EB'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#9BE33F'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "radar_diario.PM2.5 Médio (µg/m³)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PM2.5 médio por capital (µg/m³)'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E8F0EB'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

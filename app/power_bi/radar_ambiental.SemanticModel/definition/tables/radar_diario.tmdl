@@ -1,6 +1,30 @@
 table radar_diario
 	lineageTag: d121628c-41f1-42af-a4db-8beb94cbe409
 
+	measure 'Temperatura Média (°C)' = DIVIDE(SUMX('radar_diario', 'radar_diario'[media_temperatura] * 'radar_diario'[horas_observadas]), SUM('radar_diario'[horas_observadas]))
+		formatString: 0.0
+		lineageTag: d24da9bc-a183-437f-8c52-3ae900a8815d
+
+	measure 'Umidade Média (%)' = DIVIDE(SUMX('radar_diario', 'radar_diario'[media_umidade] * 'radar_diario'[horas_observadas]), SUM('radar_diario'[horas_observadas]))
+		formatString: 0.0
+		lineageTag: 9a495d4b-5321-4aaa-99cc-20baf23e0710
+
+	measure 'PM2.5 Médio (µg/m³)' = DIVIDE(SUMX('radar_diario', 'radar_diario'[media_pm2_5] * 'radar_diario'[horas_com_pm2_5]), SUM('radar_diario'[horas_com_pm2_5]))
+		formatString: 0.0
+		lineageTag: 127f87d2-0a43-48a0-97af-497eb0442592
+
+	measure 'PM10 Médio (µg/m³)' = DIVIDE(SUMX('radar_diario', 'radar_diario'[media_pm10] * 'radar_diario'[horas_com_pm10]), SUM('radar_diario'[horas_com_pm10]))
+		formatString: 0.0
+		lineageTag: a0be1551-b77a-4e73-b75d-b969f77b8bba
+
+	measure 'Ozônio Médio (µg/m³)' = DIVIDE(SUMX('radar_diario', 'radar_diario'[media_ozonio] * 'radar_diario'[horas_com_ozonio]), SUM('radar_diario'[horas_com_ozonio]))
+		formatString: 0.0
+		lineageTag: 82f637b6-cc92-47db-af41-696a8c89c5cd
+
+	measure 'Precipitação Acumulada (mm)' = SUM('radar_diario'[soma_precipitacao])
+		formatString: 0.0
+		lineageTag: 26efbe84-6509-4df0-b3a4-f897788245a0
+
 	column uf
 		dataType: string
 		lineageTag: d84957a6-e5b2-4422-ac59-28ff06452292

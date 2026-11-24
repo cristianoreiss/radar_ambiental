@@ -22,6 +22,7 @@ def gravar_parquet_bronze(
         pasta_destino: Path,
         nome_arquivo_fonte: str
 ) -> None:
+    pasta_destino.mkdir(parents=True, exist_ok=True)
     nome_arquivo = Path(nome_arquivo_fonte).stem.removeprefix("raw_") ## stem para retornar nome arquivo sem extensão
     caminho_arquivo = pasta_destino / f"bronze_{nome_arquivo}.parquet"
     dataframe.write_parquet(caminho_arquivo)
